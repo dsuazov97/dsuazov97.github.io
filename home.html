@@ -5,49 +5,139 @@
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Diego Suazo</title>
 </head>
-<body class="body">
-
-    <div class="row">
-        <div class="col-2"></div>
-        <div id="dtitulo" class="col-8">
-            <h2 id="titulo"> Portafolio Analista Programador Computacional</h2>
-            <!-- <p id="stitulo">Diego Ignacio Suazo Valenzuela</p> -->
-        </div>
-        <div class="col-2"></div>
-    </div>  
-
-    <div class="row">
+<body>
+    <div class="body">
         
-        <div class="col-lg">     
-            <img class="card-img-top" src="img/images.jpeg"></img>
-            <div class="card-body">
-                <h5 class="card-title"> Software de Escritorio</h5>
-                <p class="card-text"> Resumen de lo que vendria siendo el ramo en si</p>
-                <a href="#">Repositorio de GitHub</a>
+        <!-- Titulo -->
+
+        <div class="row">
+            <div class="col-2"></div>
+            <div id="cont-titulo" class="col-8">
+                <h2 id="titulo">Analista Programador Computacional</h2>
+            </div>
+            <div class="col-2"></div>
+        </div>  
+
+        <!-- construccion de carrusel -->
+
+        <div class="container">
+            <div id="carousel1" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carousel1" data-slide-to="0" class="active" style="height: 30%;"></li> <!-- listado -->
+                    <li data-target="#carousel1" data-slide-to="1"></li>
+                    <li data-target="#carousel1" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <a href="#"><img  src="img/images.jpeg" alt="" class="d-block w-100"></a>
+                        <div class="carousel-caption">
+                            <h3 class="textocarrusel">Perros
+                            <p>Articulos para perros</p></h3>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <a href="#"><img id="carousel" src="img/images.jpeg" alt="" class="d-block w-100"></a>
+                        <div class="carousel-caption">
+                            <h3 class="textocarrusel">Perros
+                            <p>Articulos para perros</p></h3>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <a href="#"><img id="carousel" src="img/images.jpeg" alt="" class="d-block w-100"></a>
+                        <div class="carousel-caption">
+                            <h3 class="textocarrusel">asdasd
+                            <p>Articulos para perros</p></h3>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <a href="#"><img id="carousel" src="img/images.jpeg" alt="" class="d-block w-100"></a>
+                        <div class="carousel-caption">
+                            <h3 class="textocarrusel">1231231
+                            <p>Articulos para perros</p></h3>
+                        </div>
+                    </div>
+                </div>
+
+                <a class="carousel-control-prev" href="#carousel1" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>                
+                    <span class="sr-only">previous</span>
+                </a>
+
+                <a class="carousel-control-next" href="#carousel1" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>                
+                    <span class="sr-only">next</span>
+                </a>
             </div>
         </div>
 
-        <div class="col-lg">     
-            <img class="card-img-top" src="img/images.jpeg"></img>
-            <div class="card-body">
-                <h5 class="card-title"> Software de Escritorio</h5>
-                <p class="card-text"> Resumen de lo que vendria siendo el ramo en si</p>
-                <a href="#">Repositorio de GitHub</a>
-            </div>
-        </div>
+        <hr>
 
-        <div class="col-lg">     
-            <img class="card-img-top" src="img/images.jpeg"></img>
-            <div class="card-body">
-                <h5 class="card-title"> Software de Escritorio</h5>
-                <p class="card-text"> Resumen de lo que vendria siendo el ramo en si</p>
-                <a href="#">Repositorio de GitHub</a>
+        <!-- Secciones -->
+
+        <div class="row">
+            <div class="col-4">     
+                <img class="card-img-top" src="img/images.jpeg"></img>
+                <div class="card-body">
+                    <h5 class="card-title"> Software de Escritorio</h5>
+                    <p class="card-text"> Resumen de lo que vendria siendo el ramo en si</p>
+                    <a href="#">Repositorio de GitHub</a>
+                </div>
             </div>
-        </div>
-       
-    </div>       
-           
+            <div class="col-4">     
+                <img class="card-img-top" src="img/images.jpeg"></img>
+                <div class="card-body">
+                    <h5 class="card-title"> Software de Escritorio</h5>
+                    <p class="card-text"> Resumen de lo que vendria siendo el ramo en si</p>
+                    <a href="#">Repositorio de GitHub</a>
+                </div>
+            </div>
+            <div class="col-4">     
+                <img class="card-img-top" src="img/images.jpeg"></img>
+                <div class="card-body">
+                    <h5 class="card-title"> Software de Escritorio</h5>
+                    <p class="card-text"> Resumen de lo que vendria siendo el ramo en si</p>
+                    <a href="#">Repositorio de GitHub</a>
+                </div>
+            </div>
+        </div>  
+        <br>
+
+
+        <!-- Para que funcione el carrusel-->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> 
+    </div>
 </body>
+
+<footer>
+
+    <!-- Dejar como una carta en algun lado de la web , no en el footer -->
+    <div class="container">
+        <img id="footerfoto" src="img/1664818845135.jpeg">
+        <p id="datosp">
+            <br>Diego Ignacio Suazo Valenzuela
+            <br>6 de Agosto de 1997
+            <br>19.600.336-3
+            <br>Chileno // Soltero
+            <br>Escuadra Nacional #0266, Maipú, Región Metropolitana, Chile
+            <br>(9) 34414383
+            <br>Diegoignacio.sv97@gmail.com
+        </p>   
+    </div>   
+
+    <!-- Clavado en footer -->
+    <div class="container-fluid">
+        <div> 
+            <a href="https://web.whatsapp.com/"><img src="img/whatsapp.png" width="50px" height="50px"></a>
+            <a href="https://www.gmail.com/"><img src="img/pngwing.com.png" width="55px" height="55px"></a>
+            <a href="https://www.linkedin.com/"><img src="img/pngegg.png" width="49px" height="49px"></a>
+        </div>
+        <p style="text-align: center;">© Diego Suazo - Analista Programador Computacional</p>
+    </div>
+
+</footer>
+
 </html>
