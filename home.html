@@ -13,73 +13,83 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> 
 </head>
 <body>
-    <div class="body">     
-
+    <div class="fondo">     
+        <br>
         <!-- Titulo -->
-        <div class="row">
-            <div class="col-2"></div>
-            <div id="cont-titulo" class="col-8">
-                <h2 id="titulo">Analista Programador Computacional</h2>
-            </div>
-            <div class="col-2"></div>
-        </div>  
+        <div id="cont-titulo">
+            <h2 class="titulo">Analista Programador Computacional</h2> 
+        </div>
+        <br>        
 
         <!-- construccion de carrusel -->
-        <div class="container">
-            <div id="carousel1" class="carousel slide" data-ride="carousel">
-                <ol class="carousel-indicators">
-                    <li data-target="#carousel1" data-slide-to="0" class="active" style="height: 30%;"></li> <!-- listado -->
-                    <li data-target="#carousel1" data-slide-to="1"></li>
-                    <li data-target="#carousel1" data-slide-to="2"></li>
-                </ol>
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <a href="#"><img  src="img/images.jpeg" alt="" class="d-block w-100"></a>
-                        <div class="carousel-caption">
-                            <h3 class="textocarrusel">Perros
-                            <p>Articulos para perros</p></h3>
+        <div class="row" id="fcarrusel">
+            <div class="container col-xl-7">
+                <div id="carousel1" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carousel1" data-slide-to="0" class="active" style="height: 30%;"></li> <!-- listado -->
+                        <li data-target="#carousel1" data-slide-to="1"></li>
+                        <li data-target="#carousel1" data-slide-to="2"></li>
+                        <li data-target="#carousel1" data-slide-to="3"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <a href="#"><img src="img/images.jpeg" alt="" class="d-block w-100 img-carrusel"></a>
+                            <div class="carousel-caption">
+                                <p class="textocarrusel">Primera vaina</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="carousel-item">
-                        <a href="#"><img id="carousel" src="img/images.jpeg" alt="" class="d-block w-100"></a>
-                        <div class="carousel-caption">
-                            <h3 class="textocarrusel">Perros
-                            <p>Articulos para perros</p></h3>
+                        <div class="carousel-item">
+                            <a href="#"><img src="img/images.jpeg" alt="" class="d-block w-100 img-carrusel"></a>
+                            <div class="carousel-caption">
+                                <p class="textocarrusel">Segunda vaina</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="carousel-item">
-                        <a href="#"><img id="carousel" src="img/images.jpeg" alt="" class="d-block w-100"></a>
-                        <div class="carousel-caption">
-                            <h3 class="textocarrusel">asdasd
-                            <p>Articulos para perros</p></h3>
+                        <div class="carousel-item">
+                            <a href="#"><img src="img/images.jpeg" alt="" class="d-block w-100 img-carrusel"></a>
+                            <div class="carousel-caption">
+                                <p class="textocarrusel">Tercera vaina</p>
+                            </div>
                         </div>
+                        <div class="carousel-item">
+                            <a href="#"><img src="img/images.jpeg" alt="" class="d-block w-100 img-carrusel"></a>
+                            <div class="carousel-caption">
+                                <p class="textocarrusel">Cuarta vaina</p>
+                            </div>
+                        </div> 
                     </div>
-                    <div class="carousel-item">
-                        <a href="#"><img id="carousel" src="img/images.jpeg" alt="" class="d-block w-100"></a>
-                        <div class="carousel-caption">
-                            <h3 class="textocarrusel">1231231
-                            <p>Articulos para perros</p></h3>
-                        </div>
-                    </div>
+
+                    <a class="carousel-control-prev" href="#carousel1" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>                
+                        <span class="sr-only">previous</span>
+                    </a>
+
+                    <a class="carousel-control-next" href="#carousel1" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>                
+                        <span class="sr-only">next</span>
+                    </a>
                 </div>
-
-                <a class="carousel-control-prev" href="#carousel1" data-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>                
-                    <span class="sr-only">previous</span>
-                </a>
-
-                <a class="carousel-control-next" href="#carousel1" data-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>                
-                    <span class="sr-only">next</span>
-                </a>
+            </div>
+            <div class="col-xl-5">
+                <h2 class="subtitulo"> LOREM 
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo, possimus doloremque aliquid blanditiis odit sapiente velit consectetur quibusdam saepe recusandae perferendis, unde facilis? Dignissimos nulla iusto architecto id odit in.
+                Veritatis officia expedita temporibus quae tenetur ea ex fuga non eos, repellat sapiente harum, minus, quibusdam magnam odio nemo atque recusandae repudiandae pariatur. Alias neque magni adipisci. Ea, delectus illo!
+                Illo odio consequuntur quidem veniam? Qui eligendi eveniet magni voluptatum reprehenderit iste, vitae aliquam dolores modi fugiat, nisi suscipit quas laborum perspiciatis corporis officiis tempora, molestiae voluptatem molestias! Quisquam, quaerat?
+                Porro vel nemo nam veritatis adipisci magnam, officia deleniti eaque ut eligendi, molestias nesciunt repellendus explicabo quod asperiores sed praesentium perspiciatis rerum rem. Iure sint dolores sit voluptatem nostrum unde!
+                Possimus perspiciatis saepe nulla corporis. Et facere velit accusantium fugiat repellat reiciendis quam obcaecati eaque amet repellendus corporis sed esse, molestiae iure omnis veritatis sapiente enim libero modi? Dolore, non.</p></h2>
             </div>
         </div>
 
-        <hr>
-
+        <br>
+        
         <!-- Secciones -->
         <div class="row" id="divsecciones">
-            <div class="col-sm-4" id="secciones">     
+            <!-- 
+                <div class="container-fluid">
+                <h2 class="subtitulo">Proyectos</h2>
+                </div> 
+            -->
+            <br><br><br>    
+            <div class="col-sm">     
                 <img class="img-card" src="img/images.jpeg"></img>
                 <div class="card-body">
                     <h3 class="card-title"> Software de Escritorio</h3>
@@ -87,7 +97,7 @@
                     <a class="btn btn-primary" href="#">Repositorio de GitHub</a>
                 </div>
             </div>
-            <div class="col-sm-4" id="secciones">     
+            <div class="col-sm">     
                 <img class="img-card" src="img/images.jpeg"></img>
                 <div class="card-body">
                     <h3 class="card-title"> Software de Escritorio</h3>
@@ -95,7 +105,7 @@
                     <a class="btn btn-primary" href="#">Repositorio de GitHub</a>
                 </div>
             </div>
-            <div class="col-sm-4" id="secciones">     
+            <div class="col-sm">     
                 <img class="img-card" src="img/images.jpeg"></img>
                 <div class="card-body">
                     <h3 class="card-title"> Software de Escritorio</h3>
@@ -103,40 +113,80 @@
                     <a class="btn btn-primary" href="#">Repositorio de GitHub</a>
                 </div>
             </div>
-        </div>  
+            <div class="col-sm">     
+                <img class="img-card" src="img/images.jpeg"></img>
+                <div class="card-body">
+                    <h3 class="card-title"> Software de Escritorio</h3>
+                    <p class="card-text"> Resumen de lo que vendria siendo el ramo en si</p>
+                    <a class="btn btn-primary" href="#">Repositorio de GitHub</a>
+                </div>
+            </div>
+            <div class="col-sm">     
+                <img class="img-card" src="img/images.jpeg"></img>
+                <div class="card-body">
+                    <h3 class="card-title"> Software de Escritorio</h3>
+                    <p class="card-text"> Resumen de lo que vendria siendo el ramo en si</p>
+                    <a class="btn btn-primary" href="#">Repositorio de GitHub</a>
+                </div>
+            </div>
+            <div class="col-sm">     
+                <img class="img-card" src="img/images.jpeg"></img>
+                <div class="card-body">
+                    <h3 class="card-title"> Software de Escritorio</h3>
+                    <p class="card-text"> Resumen de lo que vendria siendo el ramo en si</p>
+                    <a class="btn btn-primary" href="#">Repositorio de GitHub</a>
+                </div>
+            </div>
+            <div class="col-sm">     
+                <img class="img-card" src="img/images.jpeg"></img>
+                <div class="card-body">
+                    <h3 class="card-title"> Software de Escritorio</h3>
+                    <p class="card-text"> Resumen de lo que vendria siendo el ramo en si</p>
+                    <a class="btn btn-primary" href="#">Repositorio de GitHub</a>
+                </div>
+            </div>
+            <div class="col-sm">     
+                <img class="img-card" src="img/images.jpeg"></img>
+                <div class="card-body">
+                    <h3 class="card-title"> Software de Escritorio</h3>
+                    <p class="card-text"> Resumen de lo que vendria siendo el ramo en si</p>
+                    <a class="btn btn-primary" href="#">Repositorio de GitHub</a>
+                </div>
+            </div>           
+        </div>     
         <br>       
     </div>
 </body>
 
 <footer>
-    <div id="cont-carta" class="container-fluid">
-        <div id="carta">
-            <div class="row">
-                <div class="col">
-                    <img id="foto" src="img/1664818845135.jpeg">
+    <div id="carta">
+        <div class="row">
+            <div class="col-lg">
+                <img id="foto" src="img/1664818845135.jpeg">
+            </div>
+            <div class="col-lg">
+                <div>
+                    <h2>Diego Suazo</h2>
+                <p id="infop">
+                    Estudiante en Analista Programador Computacional, estoy finalizando mi carrera 
+                    con el proceso de práctica, vivo en Maipú, tengo 26 años, estoy en la búsqueda de nuevos
+                    conocimientos para desarrollarme de mejor manera con mi carrera. Me gusta mucho aprender y 
+                    entender nuevas mentes.
+                </p>
                 </div>
-                <div class="col">
-                    <div>
-                        <h2>Diego Suazo</h2>
-                    <p>
-                        Soy estudiante analista programador computacional, estoy finalizando mi carrera 
-                        con el proceso de práctica, vivo en Maipú, tengo 26 años, estoy en la búsqueda de nuevos
-                        conocimientos para desarrollarme de mejor manera con mi carrera. Me gusta mucho aprender y 
-                        entender nuevas mentes.
-                    </p>
-                    </div>
-                    <div>
-                        <a href="https://web.whatsapp.com/"><img src="img/whatsapp.png" width="50px" height="50px"></a>
-                        <a href="https://www.gmail.com/"><img src="img/pngwing.com.png" width="55px" height="55px"></a>
-                        <a href="https://www.linkedin.com/"><img src="img/pngegg.png" width="49px" height="49px"></a>
-                    </div>              
-                </div>
+                <div>
+                    <a href="https://web.whatsapp.com/"><img src="img/whatsapp.png" width="50px" height="50px"></a>
+                    <a href="https://www.gmail.com/"><img src="img/pngwing.com.png" width="55px" height="55px"></a>
+                    <a href="https://www.linkedin.com/"><img src="img/pngegg.png" width="49px" height="49px"></a>
+                </div>              
             </div>
         </div>
     </div>
+
     <div class="container-fluid">
         <p style="text-align: center;">© Diego Suazo - Analista Programador Computacional</p>
     </div>
+    <br>
 </footer>
 
 </html>
