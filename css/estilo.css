@@ -8,6 +8,14 @@ footer{
     text-align: center;
 }
 
+.cont-texto{
+    background-color: rgba(20, 34, 226, 0.12);
+    border-radius: 250px 250px 250px 0px; 
+    border: groove rgba(230, 231, 241, 0.2);
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
 .fondo{
     background-color: rgba(12,12,12); 
 }
@@ -19,7 +27,7 @@ footer{
 
 .img-carrusel{
     border-radius: 5% 250px 250px 5%;
-    border: 5px groove rgba(20, 34, 226, 0.3);
+    border: groove rgba(230, 231, 241, 0.2);
 }
 
 .textocarrusel{
@@ -27,18 +35,23 @@ footer{
     color: black;
 }
 
+.col-xl-5 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .carousel-inner div{
     padding: 2%;
 }
 
 .titulo{
-    font-size: 28pt;
+    font-size: 22pt;
     color: rgb(222, 223, 236);
     text-shadow: 3px 3px 3px rgba(20, 34, 226, 0.5);
 }
 
 .subtitulo{
-    padding: 40px;
+    
     text-align: center;
     font-size: 18pt;
     color: rgb(222, 223, 236);
@@ -48,10 +61,17 @@ footer{
 .subtitulo p{
     font-size: 12pt;
     text-align: justify;
-    padding-top: 40px;
+    padding-top: 10px;
     padding-bottom: 10px;
-    padding-right: 30px;
     text-shadow: none;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+#textoproyecto{
+    text-align: justify;
+    padding: 20px;
+    font-size: 12pt;
 }
 
 #cont-titulo{
@@ -92,12 +112,15 @@ footer{
     border-top: 5px groove rgba(20, 34, 226, 0.15);
     padding-top: 20px;
     padding-bottom: 20px;
-    
+    margin-right: 8%;
+    margin-left: 8%;
 }
 
 #fcarrusel{
     background-color: rgba(20, 34, 226, 0.1);
     border-radius: 5% 250px 250px 5%;
+    margin-right: 5%;
+    margin-left: 5%;
 }
 
 
