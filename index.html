@@ -11,6 +11,8 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> 
+    
+    <script src="js/funciones.js"></script>
 
 </head>
 <body>
@@ -29,15 +31,15 @@
             <div class="collapse navbar-collapse" id="opciones">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item;">
-                        <a class="nav-link" href="index.html" onmousemove="colorNav(this)" 
+                        <a class="nav-link" onmousemove="colorNav(this)" onclick="reinicio()"
                         onmouseout="transparenteNav(this)" style="border-radius: 15px;">Inicio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html" onmousemove="colorNav(this)" 
+                        <a class="nav-link" onmousemove="colorNav(this)" onclick="reproyectos()"
                         onmouseout="transparenteNav(this)" style="border-radius: 15px;">Proyectos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html" onmousemove="colorNav(this)" 
+                        <a class="nav-link" onmousemove="colorNav(this)" onclick="recontacto()"
                         onmouseout="transparenteNav(this)" style="border-radius: 15px;">Contacto</a>
                     </li>
                 </ul>
@@ -47,9 +49,12 @@
         <br>
 
         <!-- Titulo -->
-        <div id="cont-titulo">
-            <h2 class="titulo">Analista Programador Computacional</h2> 
-        </div>
+       
+            <div id="cont-titulo">
+                <h2 class="titulo">Analista Programador Computacional</h2> 
+            </div>
+        
+        
         <br>        
 
         <!-- construccion de carrusel -->
@@ -111,16 +116,18 @@
 
         <br>
         
-        <div class="cont-texto">
-            <h2 class="titulo">Un vistazo practico</h2>
-            <p id="textoproyecto">
-                En esta sección, puedes echar un vistazo a los diferentes proyectos que he realizado durante 
-                mi fase de estudios como analista programador. Es un recorrido sencillo por mi experiencia 
-                donde cada proyecto representa un desafío superado y un aprendizaje incorporado. Todo está con
-                su correspondiente repositorio en github.
-            </p>
-        </div>
-
+        <section id="proyectos">
+            <div class="cont-texto">
+                <h2 class="titulo">Un vistazo practico</h2>
+                <p id="textoproyecto">
+                    En esta sección, puedes echar un vistazo a los diferentes proyectos que he realizado durante 
+                    mi fase de estudios como analista programador. Es un recorrido sencillo por mi experiencia 
+                    donde cada proyecto representa un desafío superado y un aprendizaje incorporado. Todo está con
+                    su correspondiente repositorio en github.
+                </p>
+            </div>
+        </section>
+        
         <hr>
 
         <!-- Secciones -->
@@ -193,36 +200,38 @@
 
         <br>       
     
-        <footer>
-            <div id="carta">
-                <div class="row">
-                    <div class="col-lg">
-                        <img id="foto" src="img/1664818845135.jpeg">
-                    </div>
-                    <div class="col-lg">
-                        <div>
-                            <h2>Diego Suazo</h2>
-                        <p id="infop">
-                            Estudiante en Analista Programador Computacional, estoy finalizando mi carrera 
-                            con el proceso de práctica, vivo en Maipú, tengo 26 años, estoy en la búsqueda de nuevos
-                            conocimientos para desarrollarme de mejor manera con mi carrera. Me gusta mucho aprender y 
-                            entender nuevas mentes.
-                        </p>
+        <section id="contacto">
+            <footer>
+                <div id="carta">
+                    <div class="row">
+                        <div class="col-lg">
+                            <img id="foto" src="img/1664818845135.jpeg">
                         </div>
-                        <div>
-                            <a href="https://web.whatsapp.com/"><img src="img/whatsapp.png" width="50px" height="50px"></a>
-                            <a href="https://www.gmail.com/"><img src="img/pngwing.com.png" width="55px" height="55px"></a>
-                            <a href="https://www.linkedin.com/"><img src="img/pngegg.png" width="49px" height="49px"></a>
-                        </div>              
+                        <div class="col-lg">
+                            <div>
+                                <h2>Diego Suazo</h2>
+                            <p id="infop">
+                                Estudiante en Analista Programador Computacional, estoy finalizando mi carrera 
+                                con el proceso de práctica, vivo en Maipú, tengo 26 años, estoy en la búsqueda de nuevos
+                                conocimientos para desarrollarme de mejor manera con mi carrera. Me gusta mucho aprender y 
+                                entender nuevas mentes.
+                            </p>
+                            </div>
+                            <div>
+                                <a href="https://web.whatsapp.com/"><img src="img/whatsapp.png" width="50px" height="50px"></a>
+                                <a href="https://www.gmail.com/"><img src="img/pngwing.com.png" width="55px" height="55px"></a>
+                                <a href="https://www.linkedin.com/"><img src="img/pngegg.png" width="49px" height="49px"></a>
+                            </div>              
+                        </div>
                     </div>
                 </div>
-            </div>
-        
-            <div class="container-fluid">
-                <p style="text-align: center;">© Diego Suazo - Analista Programador Computacional</p>
-            </div>
-            <br>
-        </footer>
+            
+                <div class="container-fluid">
+                    <p style="text-align: center;">© Diego Suazo - Analista Programador Computacional</p>
+                </div>
+                <br>
+            </footer>
+        </section>
     </div>
 </body>
 
