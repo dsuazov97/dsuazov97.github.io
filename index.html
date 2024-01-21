@@ -17,102 +17,59 @@
 </head>
 <body>
     <div class="fondo">    
-
         <!--Menú de navegación-->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
-            <a class="navbar-brand titulo" href="#"> 
+        <nav class="navbar navbar-expand-lg sticky-top">
+            <a class="navbar-brand titulo"> 
                 <img src="img/tuerca.png" width="30" height="30" class="d-inline-block align-top" alt=""></img>
                 &nbsp; z!Nk
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#opciones">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            
-            <div class="collapse navbar-collapse" id="opciones">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item;">
-                        <a class="nav-link" onmousemove="colorNav(this)" onclick="reinicio()"
-                        onmouseout="transparenteNav(this)" style="border-radius: 15px;">Inicio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" onmousemove="colorNav(this)" onclick="reproyectos()"
-                        onmouseout="transparenteNav(this)" style="border-radius: 15px;">Proyectos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" onmousemove="colorNav(this)" onclick="recontacto()"
-                        onmouseout="transparenteNav(this)" style="border-radius: 15px;">Contacto</a>
-                    </li>
-                </ul>
-            </div>      
-        </nav> 
-        
-        <br>
+            </a>           
+            <ul class="nav justify-content-end">
+                <li class="nav-item;">
+                    <a class="nav-link" onclick="reinicio()">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" onclick="reproyectos()">Proyectos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" onclick="recontacto()">Contacto</a>
+                </li>
+            </ul>
+        </nav>
 
+        <hr>
         <!-- Titulo -->
-       
-            <div id="cont-titulo">
-                <h2 class="titulo">Analista Programador Computacional</h2> 
-            </div>
-        
-        
-        <br>        
+        <div id="cont-titulo">
+            <h2 class="titulo">Analista Programador Computacional</h2> 
+        </div> 
 
-        <!-- construccion de carrusel -->
-        <div class="row" id="fcarrusel">
-            <div class="container-fluid col-xl-7">
-                <div id="carousel1" class="carousel slide" data-ride="carousel">
-                    <ol class="carousel-indicators">
-                        <li data-target="#carousel1" data-slide-to="0" class="active"></li> <!-- listado -->
-                        <li data-target="#carousel1" data-slide-to="1"></li>
-                        <li data-target="#carousel1" data-slide-to="2"></li>
-                        <li data-target="#carousel1" data-slide-to="3"></li>
-                    </ol>
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <a href="#"><img src="img/images.jpeg" alt="" class="d-block w-100 img-carrusel"></a>
-                            <div class="carousel-caption">
-                                <p class="textocarrusel">Primera vaina</p>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <a href="#"><img src="img/images.jpeg" alt="" class="d-block w-100 img-carrusel"></a>
-                            <div class="carousel-caption">
-                                <p class="textocarrusel">Segunda vaina</p>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <a href="#"><img src="img/images.jpeg" alt="" class="d-block w-100 img-carrusel"></a>
-                            <div class="carousel-caption">
-                                <p class="textocarrusel">Tercera vaina</p>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <a href="#"><img src="img/images.jpeg" alt="" class="d-block w-100 img-carrusel"></a>
-                            <div class="carousel-caption">
-                                <p class="textocarrusel">Cuarta vaina</p>
-                            </div>
-                        </div> 
+        <hr>
+        
+        <section id="contacto">
+            <div id="carta">
+                <div class="row">
+                    <div class="col-md" style="text-align: center;">
+                        <img id="foto" src="img/1664818845135.jpeg">
                     </div>
-
-                    <a class="carousel-control-prev" href="#carousel1" data-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>                
-                        <span class="sr-only">previous</span>
-                    </a>
-
-                    <a class="carousel-control-next" href="#carousel1" data-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>                
-                        <span class="sr-only">next</span>
-                    </a>
+                    <div class="col-md">
+                        <div>
+                            <br>
+                            <h1>Diego Suazo</h1>          
+                        <p id="infop">
+                            Estudiante en Analista Programador Computacional, estoy finalizando mi carrera 
+                            con el proceso de práctica, vivo en Maipú, tengo 26 años, estoy en la búsqueda de nuevos
+                            conocimientos para desarrollarme de mejor manera con mi carrera. Me gusta mucho aprender y 
+                            entender nuevas mentes.
+                        </p>
+                        <h5>di.suazov@duocuc.cl</h5>
+                        </div>
+                        <div>
+                            <a class="iconos" href="https://www.linkedin.com/in/diego-suazo-valenzuela-b62358252/" target="_blank"><img src="img/pngegg.png" width="49px" height="49px"></a>
+                            <a class="iconos" href="https://github.com/dsuazov97" target="_blank"><img src="img/github.png" width="70px" height="70px"></a>
+                        </div>              
+                    </div>
                 </div>
-            </div>
-            <div class="col-xl-5">  
-                <h2 class="subtitulo"> LOREM 
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos doloribus ipsa quod numquam ducimus, itaque libero temporibus ratione illum iste iusto, error possimus provident explicabo aliquid, soluta magni repellat architecto!
-                    Inventore cum accusantium vitae rem, non eum eaque nostrum ipsa nam commodi unde molestiae est, odio beatae officia consectetur quaerat vero. Impedit quia, corporis sequi quo ratione debitis perspiciatis minima!
-                    </p>
-                </h2>
-            </div>
-        </div>
+            </div>  
+        </section>
 
         <br>
         
@@ -127,9 +84,9 @@
                 </p>
             </div>
         </section>
-        
-        <hr>
 
+        <br>
+        
         <!-- Secciones -->
         <div class="row" id="divsecciones">
             <div class="col-sm">     
@@ -199,39 +156,102 @@
         </div>    
 
         <br>       
-    
-        <section id="contacto">
-            <footer>
-                <div id="carta">
-                    <div class="row">
-                        <div class="col-lg">
-                            <img id="foto" src="img/1664818845135.jpeg">
-                        </div>
-                        <div class="col-lg">
-                            <div>
-                                <h2>Diego Suazo</h2>
-                            <p id="infop">
-                                Estudiante en Analista Programador Computacional, estoy finalizando mi carrera 
-                                con el proceso de práctica, vivo en Maipú, tengo 26 años, estoy en la búsqueda de nuevos
-                                conocimientos para desarrollarme de mejor manera con mi carrera. Me gusta mucho aprender y 
-                                entender nuevas mentes.
-                            </p>
+
+        <!-- construccion de carrusel -->
+        <div class="row" id="fcarrusel">
+            <div class="container-fluid col-xl-7">
+                <div id="carousel1" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carousel1" data-slide-to="0" class="active"></li> <!-- listado -->
+                        <li data-target="#carousel1" data-slide-to="1"></li>
+                        <li data-target="#carousel1" data-slide-to="2"></li>
+                        <li data-target="#carousel1" data-slide-to="3"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <a href="#"><img src="img/images.jpeg" alt="" class="d-block w-100 img-carrusel"></a>
+                            <div class="carousel-caption">
+                                <p class="textocarrusel">Primera vaina</p>
                             </div>
-                            <div>
-                                <a href="https://web.whatsapp.com/"><img src="img/whatsapp.png" width="50px" height="50px"></a>
-                                <a href="https://www.gmail.com/"><img src="img/pngwing.com.png" width="55px" height="55px"></a>
-                                <a href="https://www.linkedin.com/"><img src="img/pngegg.png" width="49px" height="49px"></a>
-                            </div>              
                         </div>
+                        <div class="carousel-item">
+                            <a href="#"><img src="img/images.jpeg" alt="" class="d-block w-100 img-carrusel"></a>
+                            <div class="carousel-caption">
+                                <p class="textocarrusel">Segunda vaina</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <a href="#"><img src="img/images.jpeg" alt="" class="d-block w-100 img-carrusel"></a>
+                            <div class="carousel-caption">
+                                <p class="textocarrusel">Tercera vaina</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <a href="#"><img src="img/images.jpeg" alt="" class="d-block w-100 img-carrusel"></a>
+                            <div class="carousel-caption">
+                                <p class="textocarrusel">Cuarta vaina</p>
+                            </div>
+                        </div> 
+                    </div>
+
+                    <a class="carousel-control-prev" href="#carousel1" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>                
+                        <span class="sr-only">previous</span>
+                    </a>
+
+                    <a class="carousel-control-next" href="#carousel1" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>                
+                        <span class="sr-only">next</span>
+                    </a>
+                </div>
+            </div>
+            <div class="col-xl-5">  
+                <h2 class="subtitulo"> LOREM 
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos doloribus ipsa quod numquam ducimus, itaque libero temporibus ratione illum iste iusto, error possimus provident explicabo aliquid, soluta magni repellat architecto!
+                    Inventore cum accusantium vitae rem, non eum eaque nostrum ipsa nam commodi unde molestiae est, odio beatae officia consectetur quaerat vero. Impedit quia, corporis sequi quo ratione debitis perspiciatis minima!
+                    </p>
+                </h2>
+            </div>
+        </div>
+
+        <div class="cont-texto">
+            <ul class="nav nav-pills">
+                <li class="nav-item">
+                    <a class="nav-link active" data-toggle="pill" href="#projecto1">Primero</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="pill" href="#projecto2">Segundo</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="pill" href="#projecto3">Tercero</a>
+                </li>
+            </ul>
+            
+            <div class="tab-content">
+            <div class="tab-pane container active" id="projecto1">
+                <div class="row">
+                    <div class="col-md">
+                        <img class="img-carrusel" src="img/images.jpeg"></img>
+                    </div>     
+                    
+                    <div class="card-body">
+                        <h3 class="card-title"> Software de Escritorio</h3>
+                        <p class="card-text"> Resumen de lo que vendria siendo el ramo en si</p>
+                        <a class="btn btn-primary" href="#">Repositorio de GitHub</a>
                     </div>
                 </div>
-            
-                <div class="container-fluid">
-                    <p style="text-align: center;">© Diego Suazo - Analista Programador Computacional</p>
-                </div>
-                <br>
-            </footer>
-        </section>
+            </div>
+            <div class="tab-pane container fade" id="projecto2">...</div>
+            <div class="tab-pane container fade" id="projecto3">...</div>
+            </div>
+        </div>
+
+        <div class="container-fluid">
+            <p style="text-align: center;">© Diego Suazo - Analista Programador Computacional</p>
+        </div>
+
+        
+
     </div>
 </body>
 
