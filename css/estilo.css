@@ -150,7 +150,7 @@ footer{
 
 #divsecciones{
     text-align: center;
-    border-radius: 100px 100px 200px 200px;
+    border-radius: 100px 100px 100px 100px;
     border-bottom: 5px groove rgba(20, 34, 226, 0.15);
     border-top: 5px groove rgba(20, 34, 226, 0.15);
     padding-top: 20px;
@@ -168,7 +168,7 @@ footer{
 
 .img-final{
     width: 90%;
-    min-width: 300px;
+    min-width: 250px;
     max-width: 450px;
     height: auto;
     border-radius: 40px 40px 40px 40px;
