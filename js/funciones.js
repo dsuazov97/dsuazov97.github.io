@@ -1,7 +1,7 @@
 function reinicio(){
     var posicion = document.getElementById("cont-titulo");
     window.scrollTo({
-        top: posicion.offsetTop - 100,
+        top: posicion.offsetTop - 80,
         behavior: "smooth"
     });
 }
@@ -9,15 +9,15 @@ function reinicio(){
 function reproyectos(){
     var posicion = document.getElementById("proyectos");
     window.scrollTo({
-        top: posicion.offsetTop - 70,
+        top: posicion.offsetTop - 80,
         behavior: "smooth"
     });
 }
 
-function recontacto(){
-    var posicion = document.getElementById("contacto");
+function remanejo(){
+    var posicion = document.getElementById("manejo");
     window.scrollTo({
-        top: posicion.offsetTop - 100,
+        top: posicion.offsetTop - 80,
         behavior: "smooth"
     });
 }

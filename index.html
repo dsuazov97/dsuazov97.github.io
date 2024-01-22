@@ -5,85 +5,81 @@
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Diego Suazo</title>
-
-    <!-- Para que funcione el carrusel-->
+    
+    <title>Portafolio</title>
+    
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> 
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     
     <script src="js/funciones.js"></script>
-
 </head>
 <body>
     <div class="fondo">    
         <!--Menú de navegación-->
         <nav class="navbar navbar-expand-lg sticky-top">
-            <a class="navbar-brand titulo"> 
-                <img src="img/tuerca.png" width="30" height="30" class="d-inline-block align-top" alt=""></img>
-                &nbsp; z!Nk
-            </a>           
+            <a class="navbar-brand titulo">&nbsp; z!Nk</a>           
             <ul class="nav justify-content-end">
-                <li class="nav-item;">
+                <li class="nav-item">
                     <a class="nav-link" onclick="reinicio()">Inicio</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" onclick="reproyectos()">Proyectos</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" onclick="recontacto()">Contacto</a>
+                    <a class="nav-link" onclick="reinicio()">Contacto</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" onclick="remanejo()">Manejo</a>
                 </li>
             </ul>
         </nav>
 
-        <hr>
+        <br>
+
         <!-- Titulo -->
         <div id="cont-titulo">
             <h2 class="titulo">Analista Programador Computacional</h2> 
         </div> 
 
-        <hr>
-        
-        <section id="contacto">
-            <div id="carta">
-                <div class="row">
-                    <div class="col-md" style="text-align: center;">
-                        <img id="foto" src="img/1664818845135.jpeg">
-                    </div>
-                    <div class="col-md">
-                        <div>
-                            <br>
-                            <h1>Diego Suazo</h1>          
-                        <p id="infop">
-                            Estudiante en Analista Programador Computacional, estoy finalizando mi carrera 
-                            con el proceso de práctica, vivo en Maipú, tengo 26 años, estoy en la búsqueda de nuevos
-                            conocimientos para desarrollarme de mejor manera con mi carrera. Me gusta mucho aprender y 
-                            entender nuevas mentes.
-                        </p>
-                        <h5>di.suazov@duocuc.cl</h5>
-                        </div>
-                        <div>
-                            <a class="iconos" href="https://www.linkedin.com/in/diego-suazo-valenzuela-b62358252/" target="_blank"><img src="img/pngegg.png" width="49px" height="49px"></a>
-                            <a class="iconos" href="https://github.com/dsuazov97" target="_blank"><img src="img/github.png" width="70px" height="70px"></a>
-                        </div>              
-                    </div>
-                </div>
-            </div>  
-        </section>
-
         <br>
         
-        <section id="proyectos">
-            <div class="cont-texto">
-                <h2 class="titulo">Un vistazo practico</h2>
-                <p id="textoproyecto">
-                    En esta sección, puedes echar un vistazo a los diferentes proyectos que he realizado durante 
-                    mi fase de estudios como analista programador. Es un recorrido sencillo por mi experiencia 
-                    donde cada proyecto representa un desafío superado y un aprendizaje incorporado. Todo está con
-                    su correspondiente repositorio en github.
-                </p>
+        <div id="carta">
+            <div class="row">
+                <div class="col-md" style="text-align: center;">
+                    <img id="foto" src="img/1664818845135.jpeg">
+                </div>
+                <div class="col-md">
+                    <div>
+                        <br>
+                        <h1 class="titulo"><span style="font-size: 18pt;">Mi nombre es </span>Diego Suazo</h1>          
+                    <p id="infop">
+                        Soy estudiante Analista Programador Computacional en DuocUc, me encuentro finalizando mi carrera 
+                        en busqueda de mi proceso de práctica profesional, vivo en Maipú, tengo 26 años, con una hermosa hija,
+                        actualmente estoy en la búsqueda de nuevos conocimientos para desarrollarme de mejor manera con mi carrera.
+                        Me gusta mucho aprender y entender nuevas mentes. 
+                    </p>
+                    <h6>Redes de contacto: di.suazov@duocuc.cl</h6>
+                    </div>
+                    <div>
+                        <a class="iconos" href="https://www.linkedin.com/in/diego-suazo-valenzuela-b62358252/" target="_blank"><img src="img/pngegg.png" width="49px" height="49px"></a>
+                        <a class="iconos" href="https://github.com/dsuazov97" target="_blank"><img src="img/github.png" width="70px" height="70px"></a>
+                    </div>              
+                </div>
             </div>
-        </section>
+        </div>  
+        
+        <br>
+        
+        <div class="cont-texto" id="proyectos">
+            <h2 class="titulo">Un vistazo practico</h2>
+            <p id="textoproyecto">
+                En esta sección, puedes echar un vistazo a los diferentes proyectos que he realizado durante 
+                mi fase de estudios como analista programador. Es un recorrido sencillo por mi experiencia 
+                donde cada proyecto representa un desafío superado y un aprendizaje incorporado. Todo está con
+                su correspondiente repositorio en github.
+            </p>
+        </div>
 
         <br>
         
@@ -157,64 +153,7 @@
 
         <br>       
 
-        <!-- construccion de carrusel -->
-        <div class="row" id="fcarrusel">
-            <div class="container-fluid col-xl-7">
-                <div id="carousel1" class="carousel slide" data-ride="carousel">
-                    <ol class="carousel-indicators">
-                        <li data-target="#carousel1" data-slide-to="0" class="active"></li> <!-- listado -->
-                        <li data-target="#carousel1" data-slide-to="1"></li>
-                        <li data-target="#carousel1" data-slide-to="2"></li>
-                        <li data-target="#carousel1" data-slide-to="3"></li>
-                    </ol>
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <a href="#"><img src="img/images.jpeg" alt="" class="d-block w-100 img-carrusel"></a>
-                            <div class="carousel-caption">
-                                <p class="textocarrusel">Primera vaina</p>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <a href="#"><img src="img/images.jpeg" alt="" class="d-block w-100 img-carrusel"></a>
-                            <div class="carousel-caption">
-                                <p class="textocarrusel">Segunda vaina</p>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <a href="#"><img src="img/images.jpeg" alt="" class="d-block w-100 img-carrusel"></a>
-                            <div class="carousel-caption">
-                                <p class="textocarrusel">Tercera vaina</p>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <a href="#"><img src="img/images.jpeg" alt="" class="d-block w-100 img-carrusel"></a>
-                            <div class="carousel-caption">
-                                <p class="textocarrusel">Cuarta vaina</p>
-                            </div>
-                        </div> 
-                    </div>
-
-                    <a class="carousel-control-prev" href="#carousel1" data-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>                
-                        <span class="sr-only">previous</span>
-                    </a>
-
-                    <a class="carousel-control-next" href="#carousel1" data-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>                
-                        <span class="sr-only">next</span>
-                    </a>
-                </div>
-            </div>
-            <div class="col-xl-5">  
-                <h2 class="subtitulo"> LOREM 
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos doloribus ipsa quod numquam ducimus, itaque libero temporibus ratione illum iste iusto, error possimus provident explicabo aliquid, soluta magni repellat architecto!
-                    Inventore cum accusantium vitae rem, non eum eaque nostrum ipsa nam commodi unde molestiae est, odio beatae officia consectetur quaerat vero. Impedit quia, corporis sequi quo ratione debitis perspiciatis minima!
-                    </p>
-                </h2>
-            </div>
-        </div>
-
-        <div class="cont-texto">
+        <div class="cont-texto2">
             <ul class="nav nav-pills">
                 <li class="nav-item">
                     <a class="nav-link active" data-toggle="pill" href="#projecto1">Primero</a>
@@ -222,35 +161,103 @@
                 <li class="nav-item">
                     <a class="nav-link" data-toggle="pill" href="#projecto2">Segundo</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" data-toggle="pill" href="#projecto3">Tercero</a>
-                </li>
             </ul>
             
             <div class="tab-content">
-            <div class="tab-pane container active" id="projecto1">
-                <div class="row">
-                    <div class="col-md">
-                        <img class="img-carrusel" src="img/images.jpeg"></img>
-                    </div>     
-                    
-                    <div class="card-body">
-                        <h3 class="card-title"> Software de Escritorio</h3>
-                        <p class="card-text"> Resumen de lo que vendria siendo el ramo en si</p>
-                        <a class="btn btn-primary" href="#">Repositorio de GitHub</a>
+                <div class="tab-pane container active" id="projecto1">
+                    <div class="row">
+                        <div class="card-body col-md-7">
+                            <h3 class="card-title"> Software de Escritorio</h3>
+                            <p class="card-text"> Resumen de lo que vendria siendo el ramo en si</p>
+                            <a class="btn btn-primary" href="#">Repositorio de GitHub</a>
+                        </div>
+                        <div class="col-md">
+                            <img id="img-final" src="img/images.jpeg"></img>
+                        </div>     
+                    </div>
+                </div>
+                <div class="tab-pane container fade" id="projecto2">
+                    <!-- construccion de carrusel -->
+                    <div class="row" id="fcarrusel">
+                        <div class="container-fluid col-xl-7">
+                            <div id="carousel1" class="carousel slide" data-ride="carousel">
+                                <ol class="carousel-indicators">
+                                    <li data-target="#carousel1" data-slide-to="0" class="active"></li> <!-- listado -->
+                                    <li data-target="#carousel1" data-slide-to="1"></li>
+                                    <li data-target="#carousel1" data-slide-to="2"></li>
+                                    <li data-target="#carousel1" data-slide-to="3"></li>
+                                </ol>
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <a href="#"><img src="img/images.jpeg" alt="" class="d-block w-100 img-carrusel"></a>
+                                        <div class="carousel-caption">
+                                            <p class="textocarrusel">Primera vaina</p>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <a href="#"><img src="img/images.jpeg" alt="" class="d-block w-100 img-carrusel"></a>
+                                        <div class="carousel-caption">
+                                            <p class="textocarrusel">Segunda vaina</p>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <a href="#"><img src="img/images.jpeg" alt="" class="d-block w-100 img-carrusel"></a>
+                                        <div class="carousel-caption">
+                                            <p class="textocarrusel">Tercera vaina</p>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <a href="#"><img src="img/images.jpeg" alt="" class="d-block w-100 img-carrusel"></a>
+                                        <div class="carousel-caption">
+                                            <p class="textocarrusel">Cuarta vaina</p>
+                                        </div>
+                                    </div> 
+                                </div>
+
+                                <a class="carousel-control-prev" href="#carousel1" data-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>                
+                                    <span class="sr-only">previous</span>
+                                </a>
+
+                                <a class="carousel-control-next" href="#carousel1" data-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>                
+                                    <span class="sr-only">next</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-xl-5">  
+                            <h2 class="subtitulo"> LOREM 
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos doloribus ipsa quod numquam ducimus, itaque libero temporibus ratione illum iste iusto, error possimus provident explicabo aliquid, soluta magni repellat architecto!
+                                Inventore cum accusantium vitae rem, non eum eaque nostrum ipsa nam commodi unde molestiae est, odio beatae officia consectetur quaerat vero. Impedit quia, corporis sequi quo ratione debitis perspiciatis minima!
+                                </p>
+                            </h2>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="tab-pane container fade" id="projecto2">...</div>
-            <div class="tab-pane container fade" id="projecto3">...</div>
+        </div>
+
+        <br>
+
+        <div class="cont-texto3" id="manejo">
+            <div>
+                <div>
+                    <h3 class="titulo">Manejos</h3>          
+                </div>
+                <div id="textoproyecto">
+                    <a class="iconos" href="https://www.linkedin.com/in/diego-suazo-valenzuela-b62358252/" target="_blank"><img src="img/pngegg.png" width="49px" height="49px"></a>
+                    <a class="iconos" href="https://github.com/dsuazov97" target="_blank"><img src="img/github.png" width="70px" height="70px"></a>
+                </div>              
             </div>
         </div>
 
+        <br>
+        
         <div class="container-fluid">
             <p style="text-align: center;">© Diego Suazo - Analista Programador Computacional</p>
         </div>
-
         
+        <br>
 
     </div>
 </body>
