@@ -17,11 +17,10 @@
 <body>
     <div class="fondo">    
         <!--Menú de navegación-->
-        <nav class="navbar navbar-expand-lg sticky-top">
-            <a class="navbar-brand titulo">&nbsp; z!Nk</a>           
-            <ul class="nav justify-content-end">
+        <nav class="navbar navbar-expand-lg sticky-top justify-content-end">
+            <ul class="nav">
                 <li class="nav-item">
-                    <a class="nav-link" onclick="reinicio()">Inicio</a>
+                    <a class="nav-link titulo" onclick="reinicio()" style="font-size: 12pt;">z!Nk</a>  
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" onclick="reproyectos()">Proyectos</a>
@@ -84,87 +83,23 @@
         <br>
         
         <!-- Secciones -->
-        <div class="row" id="divsecciones">
-            <div class="col-sm">     
-                <img class="img-card" src="img/images.jpeg"></img>
-                <div class="card-body">
-                    <h3 class="card-title"> Software de Escritorio</h3>
-                    <p class="card-text"> Resumen de lo que vendria siendo el ramo en si</p>
-                    <a class="btn btn-primary" href="#">Repositorio de GitHub</a>
-                </div>
-            </div>
-            <div class="col-sm">     
-                <img class="img-card" src="img/images.jpeg"></img>
-                <div class="card-body">
-                    <h3 class="card-title"> Software de Escritorio</h3>
-                    <p class="card-text"> Resumen de lo que vendria siendo el ramo en si</p>
-                    <a class="btn btn-primary" href="#">Repositorio de GitHub</a>
-                </div>
-            </div>
-            <div class="col-sm">     
-                <img class="img-card" src="img/images.jpeg"></img>
-                <div class="card-body">
-                    <h3 class="card-title"> Software de Escritorio</h3>
-                    <p class="card-text"> Resumen de lo que vendria siendo el ramo en si</p>
-                    <a class="btn btn-primary" href="#">Repositorio de GitHub</a>
-                </div>
-            </div>
-            <div class="col-sm">     
-                <img class="img-card" src="img/images.jpeg"></img>
-                <div class="card-body">
-                    <h3 class="card-title"> Software de Escritorio</h3>
-                    <p class="card-text"> Resumen de lo que vendria siendo el ramo en si</p>
-                    <a class="btn btn-primary" href="#">Repositorio de GitHub</a>
-                </div>
-            </div>
-            <div class="col-sm">     
-                <img class="img-card" src="img/images.jpeg"></img>
-                <div class="card-body">
-                    <h3 class="card-title"> Software de Escritorio</h3>
-                    <p class="card-text"> Resumen de lo que vendria siendo el ramo en si</p>
-                    <a class="btn btn-primary" href="#">Repositorio de GitHub</a>
-                </div>
-            </div>
-            <div class="col-sm">     
-                <img class="img-card" src="img/images.jpeg"></img>
-                <div class="card-body">
-                    <h3 class="card-title"> Software de Escritorio</h3>
-                    <p class="card-text"> Resumen de lo que vendria siendo el ramo en si</p>
-                    <a class="btn btn-primary" href="#">Repositorio de GitHub</a>
-                </div>
-            </div>
-            <div class="col-sm">     
-                <img class="img-card" src="img/images.jpeg"></img>
-                <div class="card-body">
-                    <h3 class="card-title"> Software de Escritorio</h3>
-                    <p class="card-text"> Resumen de lo que vendria siendo el ramo en si</p>
-                    <a class="btn btn-primary" href="#">Repositorio de GitHub</a>
-                </div>
-            </div>
-            <div class="col-sm">     
-                <img class="img-card" src="img/images.jpeg"></img>
-                <div class="card-body">
-                    <h3 class="card-title"> Software de Escritorio</h3>
-                    <p class="card-text"> Resumen de lo que vendria siendo el ramo en si</p>
-                    <a class="btn btn-primary" href="#">Repositorio de GitHub</a>
-                </div>
-            </div>           
-        </div>    
-
-        <br>       
-
-        <div class="cont-texto2">
-            <ul class="nav nav-pills">
+        <div id="divsecciones">
+            <ul class="nav nav-justified">
                 <li class="nav-item">
-                    <a class="nav-link active" data-toggle="pill" href="#projecto1">Primero</a>
+                    <a class="nav-link" data-toggle="tab" href="#tab1">Principales</a>
+                </li>      
+                <li class="nav-item">
+                    <a class="nav-link active" data-toggle="tab" href="#tab2">Todos los proyectos</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" data-toggle="pill" href="#projecto2">Segundo</a>
+                    <a class="nav-link" data-toggle="tab" href="#tab3">Ejemplos</a>
                 </li>
             </ul>
-            
+
+            <hr>
+
             <div class="tab-content">
-                <div class="tab-pane container active" id="projecto1">
+                <div class="tab-pane container fade" id="tab1">
                     <div class="row">
                         <div class="card-body col-md-7">
                             <h3 class="card-title"> Software de Escritorio</h3>
@@ -172,74 +107,145 @@
                             <a class="btn btn-primary" href="#">Repositorio de GitHub</a>
                         </div>
                         <div class="col-md">
-                            <img id="img-final" src="img/images.jpeg"></img>
+                            <img class="img-final" src="img/images.jpeg"></img>
                         </div>     
                     </div>
                 </div>
-                <div class="tab-pane container fade" id="projecto2">
-                    <!-- construccion de carrusel -->
-                    <div class="row" id="fcarrusel">
-                        <div class="container-fluid col-xl-7">
-                            <div id="carousel1" class="carousel slide" data-ride="carousel">
-                                <ol class="carousel-indicators">
-                                    <li data-target="#carousel1" data-slide-to="0" class="active"></li> <!-- listado -->
-                                    <li data-target="#carousel1" data-slide-to="1"></li>
-                                    <li data-target="#carousel1" data-slide-to="2"></li>
-                                    <li data-target="#carousel1" data-slide-to="3"></li>
-                                </ol>
-                                <div class="carousel-inner">
-                                    <div class="carousel-item active">
-                                        <a href="#"><img src="img/images.jpeg" alt="" class="d-block w-100 img-carrusel"></a>
-                                        <div class="carousel-caption">
-                                            <p class="textocarrusel">Primera vaina</p>
-                                        </div>
-                                    </div>
-                                    <div class="carousel-item">
-                                        <a href="#"><img src="img/images.jpeg" alt="" class="d-block w-100 img-carrusel"></a>
-                                        <div class="carousel-caption">
-                                            <p class="textocarrusel">Segunda vaina</p>
-                                        </div>
-                                    </div>
-                                    <div class="carousel-item">
-                                        <a href="#"><img src="img/images.jpeg" alt="" class="d-block w-100 img-carrusel"></a>
-                                        <div class="carousel-caption">
-                                            <p class="textocarrusel">Tercera vaina</p>
-                                        </div>
-                                    </div>
-                                    <div class="carousel-item">
-                                        <a href="#"><img src="img/images.jpeg" alt="" class="d-block w-100 img-carrusel"></a>
-                                        <div class="carousel-caption">
-                                            <p class="textocarrusel">Cuarta vaina</p>
-                                        </div>
-                                    </div> 
-                                </div>
 
-                                <a class="carousel-control-prev" href="#carousel1" data-slide="prev">
-                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>                
-                                    <span class="sr-only">previous</span>
-                                </a>
-
-                                <a class="carousel-control-next" href="#carousel1" data-slide="next">
-                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>                
-                                    <span class="sr-only">next</span>
-                                </a>
+                <div class="tab-pane container active" id="tab2">
+                    <div class="row">           
+                        <div class="col-sm">     
+                            <img class="img-card" src="img/images.jpeg"></img>
+                            <div class="card-body">
+                                <h3 class="card-title"> Software de Escritorio</h3>
+                                <p class="card-text"> Resumen de lo que vendria siendo el ramo en si</p>
+                                <a class="btn btn-primary" href="#">Repositorio de GitHub</a>
                             </div>
                         </div>
-                        <div class="col-xl-5">  
-                            <h2 class="subtitulo"> LOREM 
-                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos doloribus ipsa quod numquam ducimus, itaque libero temporibus ratione illum iste iusto, error possimus provident explicabo aliquid, soluta magni repellat architecto!
-                                Inventore cum accusantium vitae rem, non eum eaque nostrum ipsa nam commodi unde molestiae est, odio beatae officia consectetur quaerat vero. Impedit quia, corporis sequi quo ratione debitis perspiciatis minima!
-                                </p>
-                            </h2>
+                        <div class="col-sm">     
+                            <img class="img-card" src="img/images.jpeg"></img>
+                            <div class="card-body">
+                                <h3 class="card-title"> Software de Escritorio</h3>
+                                <p class="card-text"> Resumen de lo que vendria siendo el ramo en si</p>
+                                <a class="btn btn-primary" href="#">Repositorio de GitHub</a>
+                            </div>
                         </div>
+                        <div class="col-sm">     
+                            <img class="img-card" src="img/images.jpeg"></img>
+                            <div class="card-body">
+                                <h3 class="card-title"> Software de Escritorio</h3>
+                                <p class="card-text"> Resumen de lo que vendria siendo el ramo en si</p>
+                                <a class="btn btn-primary" href="#">Repositorio de GitHub</a>
+                            </div>
+                        </div>
+                        <div class="col-sm">     
+                            <img class="img-card" src="img/images.jpeg"></img>
+                            <div class="card-body">
+                                <h3 class="card-title"> Software de Escritorio</h3>
+                                <p class="card-text"> Resumen de lo que vendria siendo el ramo en si</p>
+                                <a class="btn btn-primary" href="#">Repositorio de GitHub</a>
+                            </div>
+                        </div>
+                        <div class="col-sm">     
+                            <img class="img-card" src="img/images.jpeg"></img>
+                            <div class="card-body">
+                                <h3 class="card-title"> Software de Escritorio</h3>
+                                <p class="card-text"> Resumen de lo que vendria siendo el ramo en si</p>
+                                <a class="btn btn-primary" href="#">Repositorio de GitHub</a>
+                            </div>
+                        </div>
+                        <div class="col-sm">     
+                            <img class="img-card" src="img/images.jpeg"></img>
+                            <div class="card-body">
+                                <h3 class="card-title"> Software de Escritorio</h3>
+                                <p class="card-text"> Resumen de lo que vendria siendo el ramo en si</p>
+                                <a class="btn btn-primary" href="#">Repositorio de GitHub</a>
+                            </div>
+                        </div>
+                        <div class="col-sm">     
+                            <img class="img-card" src="img/images.jpeg"></img>
+                            <div class="card-body">
+                                <h3 class="card-title"> Software de Escritorio</h3>
+                                <p class="card-text"> Resumen de lo que vendria siendo el ramo en si</p>
+                                <a class="btn btn-primary" href="#">Repositorio de GitHub</a>
+                            </div>
+                        </div>
+                        <div class="col-sm">     
+                            <img class="img-card" src="img/images.jpeg"></img>
+                            <div class="card-body">
+                                <h3 class="card-title"> Software de Escritorio</h3>
+                                <p class="card-text"> Resumen de lo que vendria siendo el ramo en si</p>
+                                <a class="btn btn-primary" href="#">Repositorio de GitHub</a>
+                            </div>
+                        </div>           
+                    </div> 
+                </div>
+    
+                <div class="tab-pane container fade" id="tab3">
+                    <div class="row">
+                        <div class="card-body col-md-7">
+                            <h3 class="card-title"> Software de Escritorio</h3>
+                            <p class="card-text"> Resumen de lo que vendria siendo el ramo en si</p>
+                            <a class="btn btn-primary" href="#">Repositorio de GitHub</a>
+                        </div>
+                        <div class="col-md">
+                            <div class="row">
+                                <div class="container-fluid">
+                                    <div id="carousel2" class="carousel slide" data-ride="carousel2">
+                                        <ol class="carousel-indicators">
+                                            <li data-target="#carousel1" data-slide-to="0" class="active"></li>
+                                            <li data-target="#carousel1" data-slide-to="1"></li>
+                                            <li data-target="#carousel1" data-slide-to="2"></li>
+                                            <li data-target="#carousel1" data-slide-to="3"></li>
+                                        </ol>
+                                        <div class="carousel-inner">
+                                            <div class="carousel-item active">
+                                                <a href="#"><img src="img/images.jpeg" alt="" class="d-block w-100 img-final"></a>
+                                                <div class="carousel-caption">
+                                                    <p class="textocarrusel">Primera vaina</p>
+                                                </div>
+                                            </div>
+                                            <div class="carousel-item">
+                                                <a href="#"><img src="img/images.jpeg" alt="" class="d-block w-100 img-final"></a>
+                                                <div class="carousel-caption">
+                                                    <p class="textocarrusel">Segunda vaina</p>
+                                                </div>
+                                            </div>
+                                            <div class="carousel-item">
+                                                <a href="#"><img src="img/images.jpeg" alt="" class="d-block w-100 img-final"></a>
+                                                <div class="carousel-caption">
+                                                    <p class="textocarrusel">Tercera vaina</p>
+                                                </div>
+                                            </div>
+                                            <div class="carousel-item">
+                                                <a href="#"><img src="img/images.jpeg" alt="" class="d-block w-100 img-final"></a>
+                                                <div class="carousel-caption">
+                                                    <p class="textocarrusel">Cuarta vaina</p>
+                                                </div>
+                                            </div> 
+                                        </div>
+
+                                        <a class="carousel-control-prev" href="#carousel2" data-slide="prev">
+                                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>                
+                                            <span class="sr-only">previous</span>
+                                        </a>
+
+                                        <a class="carousel-control-next" href="#carousel2" data-slide="next">
+                                            <span class="carousel-control-next-icon" aria-hidden="true"></span>                
+                                            <span class="sr-only">next</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>     
                     </div>
                 </div>
             </div>
         </div>
-
+        
         <br>
 
-        <div class="cont-texto3" id="manejo">
+        <div class="cont-texto2" id="manejo">
             <div>
                 <div>
                     <h3 class="titulo">Manejos</h3>          

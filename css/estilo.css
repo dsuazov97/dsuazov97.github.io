@@ -35,14 +35,6 @@ footer{
     margin-right: 10%;
 }
 
-.cont-texto3{
-    background-color: rgba(20, 34, 226, 0.12);
-    border-radius: 250px 250px 250px 250px; 
-    border: groove rgba(230, 231, 241, 0.2);
-    margin-left: 10%;
-    margin-right: 10%;
-}
-
 .cont-texto2{
     background-color: rgba(20, 34, 226, 0.12);
     border-radius: 0px 0px 250px 250px; 
@@ -174,7 +166,7 @@ footer{
     margin-left: 5%;
 }
 
-#img-final{
+.img-final{
     width: 90%;
     min-width: 300px;
     max-width: 450px;
@@ -182,4 +174,5 @@ footer{
     border-radius: 40px 40px 40px 40px;
     border: groove rgba(20, 34, 226, 0.3);    
 }
+
 
