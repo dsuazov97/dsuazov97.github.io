@@ -8,15 +8,11 @@ footer{
     text-align: center;
 }
 
-.nav-link {
-    display: inline-block;
-    border-radius: 20px;
-    transition: background-color 0.3s ease;
-    cursor: pointer;
-}
-
-.nav-link:hover {
-    background-color: rgba(20, 34, 226, 0.3);
+.div-iconos{
+    text-align: center;
+    background-color: rgba(207, 208, 216, 0.2);
+    border-radius: 20px 20px 250px 250px;
+    margin-inline: 15%;
 }
 
 .nav-link:active {
@@ -24,7 +20,18 @@ footer{
 }
 
 .nav-link {
-    transition: background-color 0.5s ease, transform 0.1s ease;
+    display: inline-block;
+    padding: 10px 15px;
+    text-decoration: none;
+    border: 1px solid rgba(20, 34, 226, 0.6);
+    border-radius: 5px 5px 20px 20px;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+    margin: 2px;
+}
+
+.nav-link:hover {
+    background-color: rgb(112, 118, 201);
 }
 
 .cont-texto{
@@ -155,13 +162,6 @@ footer{
     border-top: 5px groove rgba(20, 34, 226, 0.15);
     padding-top: 20px;
     padding-bottom: 20px;
-    margin-right: 8%;
-    margin-left: 8%;
-}
-
-#fcarrusel{
-    background-color: rgba(20, 34, 226, 0.1);
-    border-radius: 5% 250px 250px 5%;
     margin-right: 5%;
     margin-left: 5%;
 }
@@ -172,6 +172,17 @@ footer{
     max-width: 450px;
     height: auto;
     border-radius: 40px 40px 40px 40px;
+    border: groove rgba(20, 34, 226, 0.3);    
+}
+
+.img-carr{
+    width: 90%;
+    min-width: 285px;
+    max-width: 681.px;
+    min-height: 280px;
+    max-height: 602.03px;
+    height: auto;
+    border-radius: 20px 20px 20px 20px;
     border: groove rgba(20, 34, 226, 0.3);    
 }
 
