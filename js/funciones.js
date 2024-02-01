@@ -1,24 +1,27 @@
-function reinicio(){
+function reinicio() {
     var posicion = document.getElementById("cont-titulo");
-    window.scrollTo({
-        top: posicion.offsetTop - 80,
-        behavior: "smooth"
-    });
+    scrollToElement(posicion);
 }
 
-function reproyectos(){
+function reproyectos() {
     var posicion = document.getElementById("proyectos");
-    window.scrollTo({
-        top: posicion.offsetTop - 80,
-        behavior: "smooth"
-    });
+    scrollToElement(posicion);
 }
 
-function remanejo(){
+function remanejo() {
     var posicion = document.getElementById("manejo");
-    window.scrollTo({
-        top: posicion.offsetTop - 80,
-        behavior: "smooth"
-    });
+    scrollToElement(posicion);
 }
+
+function scrollToElement(elemento) {
+    if (elemento) {
+        window.scrollTo({
+            top: elemento.offsetTop - 80,
+            behavior: "smooth"
+        });
+    } else {
+        console.error('El elemento no se encontró en el DOM.');
+    }
+}
+
 
