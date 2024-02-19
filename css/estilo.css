@@ -62,6 +62,14 @@ footer{
     border: 5px groove rgba(20, 34, 226, 0.3);
 }
 
+.img-card2{
+    border-radius: 40px 40px 10px 10px;
+    border: 5px groove rgba(20, 34, 226, 0.3);
+    min-height: 350px;
+    max-width: 700px;
+    max-height: 450px;
+}
+
 .img-carrusel{
     border-radius: 5% 250px 250px 5%;
     border: groove rgba(230, 231, 241, 0.2);
@@ -108,9 +116,10 @@ footer{
 
 .div-iconos{
     text-align: center;
-    background-color: rgba(207, 208, 216, 0.2);
+    background-color: rgba(207, 208, 216, 0.3);
     border-radius: 100px 100px 250px 250px;
     margin-inline: 20%;
+    padding: 5px;
 }
 
 #textoproyecto{
@@ -186,12 +195,12 @@ footer{
 .img-carr{
     width: 90%;
     min-width: 285px;
-    max-width: 681.px;
     min-height: 280px;
-    max-height: 602.03px;
+    max-height: 700px;
+    width: auto;
     height: auto;
     border-radius: 20px 20px 20px 20px;
-    border: groove rgba(20, 34, 226, 0.3);    
+    border: groove rgba(20, 34, 226, 0.5);    
 }
 
 .card-text {
@@ -244,5 +253,9 @@ footer{
         background-color: rgba(207, 208, 216, 0.2);
         border-radius: 20px 20px 250px 250px;
         margin-inline: 10%;
+    }
+
+    .img-carr{
+        width: 80%; 
     }
 }
