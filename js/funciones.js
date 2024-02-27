@@ -8,8 +8,8 @@ function reproyectos() {
     scrollToElement(posicion);
 }
 
-function remanejo() {
-    var posicion = document.getElementById("manejo");
+function reexperiencia() {
+    var posicion = document.getElementById("experiencia");
     scrollToElement(posicion);
 }
 
@@ -23,5 +23,7 @@ function scrollToElement(elemento) {
         console.error('El elemento no se encontró en el DOM.');
     }
 }
+
+
 
 

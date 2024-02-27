@@ -41,16 +41,17 @@ footer{
     margin-left: 10%;
     margin-right: 10%;
     padding-inline: 30px;
+    padding-top: 15px;
 }
 
-.cont-texto2{
+.cont-experiencia{
     background-color: rgba(20, 34, 226, 0.12);
     border-radius: 0px 0px 250px 250px; 
     border: groove rgba(230, 231, 241, 0.2);
     margin-left: 10%;
     margin-right: 10%;
-    padding-bottom: 20px;
-    padding-inline: 30px;
+    padding-bottom: 15px;
+    padding-top: 15px;
 }
 
 .fondo{
@@ -62,28 +63,14 @@ footer{
     border: 5px groove rgba(20, 34, 226, 0.3);
 }
 
-.img-card2{
-    border-radius: 40px 40px 10px 10px;
-    border: 5px groove rgba(20, 34, 226, 0.3);
-    min-height: 350px;
-    max-width: 700px;
-    max-height: 450px;
-}
-
-.img-carrusel{
-    border-radius: 5% 250px 250px 5%;
-    border: groove rgba(230, 231, 241, 0.2);
+.img-proyectos2{
+    border-radius: 10px;
+    border: 2px groove rgba(220, 221, 231, 0.6);
 }
 
 .textocarrusel{
     background-color: rgb(206, 208, 218, 0.5);
     color: black;
-}
-
-.col-xl-5 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 .carousel-inner div{
@@ -97,9 +84,8 @@ footer{
 }
 
 .subtitulo{
-    
     text-align: center;
-    font-size: 18pt;
+    font-size: 22pt;
     color: rgb(222, 223, 236);
     text-shadow: 3px 3px 3px rgba(20, 34, 226, 0.5);
 }
@@ -115,11 +101,11 @@ footer{
 }
 
 .div-iconos{
+    background-color: rgba(207, 208, 216, 0.4);
+    border-radius: 40px 40px 250px 250px;
+    margin-inline: 15%;
     text-align: center;
-    background-color: rgba(207, 208, 216, 0.3);
-    border-radius: 100px 100px 250px 250px;
-    margin-inline: 20%;
-    padding: 5px;
+    padding: 20px;
 }
 
 #textoproyecto{
@@ -192,21 +178,27 @@ footer{
     border: groove rgba(20, 34, 226, 0.3);    
 }
 
-.img-carr{
-    width: 90%;
-    min-width: 285px;
-    min-height: 280px;
-    max-height: 700px;
-    width: auto;
-    height: auto;
-    border-radius: 20px 20px 20px 20px;
-    border: groove rgba(20, 34, 226, 0.5);    
-}
-
 .card-text {
     text-align: justify;
     padding-inline: 25px;
 }
+
+.img-conocimientos{
+    filter: brightness(1.8);
+    filter: contrast(140%);
+    filter: drop-shadow(1px 1px 0.3px rgba(233, 248, 244, 0.247));
+    margin: 1px;
+}
+
+.img-carrusel-3{
+    width: 90%;
+    height: 600px;
+    width: auto;
+    border-radius: 20px 20px 20px 20px;
+    border: groove rgba(238, 239, 243, 0.712);    
+}
+
+/* Resoluciones más pequeñas */
 
 @media (max-width: 768px) {
     #carta {
@@ -230,7 +222,7 @@ footer{
     }
 
     .cont-texto {
-        margin-inline: 5%;
+        margin-inline: 4%;
         padding-inline: 0px;
         padding-top: 50px;
     }
@@ -243,19 +235,120 @@ footer{
         padding-inline: 5px;
     }
 
-    .cont-texto2 {
-        margin-inline: 2%;
+    .cont-experiencia {
+        margin-inline: 4%;
         padding-inline: 0px;
     }
 
     .div-iconos{
-        text-align: center;
-        background-color: rgba(207, 208, 216, 0.2);
-        border-radius: 20px 20px 250px 250px;
+        border-radius: 60px 60px 250px 250px;
+        margin: 25px;
         margin-inline: 10%;
     }
+}
 
-    .img-carr{
-        width: 80%; 
+
+#welcome {
+    transition: 2s ease;
+    display: flex;
+    background-color: rgba(16, 3, 72, 0.2);
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 1px 1px 30px 0 rgba(229, 228, 228, 0.2);
+}
+
+#welcome:hover {
+    box-shadow: 1px 1px 80px 0 rgba(229, 228, 228, 0.6);
+    background-color: rgba(3, 41, 72, 0.5);
+    width: 550px;
+    height: 550px;
+    margin: auto;
+}
+
+#welcome img {
+    position: relative;
+    transition: 2s ease;
+    width: auto;
+    height: 400px;
+    filter: brightness(0.2);
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 2;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#welcome img:hover {
+    width: auto;
+    height: 450px;
+    opacity: 0.89;
+    filter: brightness(0.8);
+    border-radius: 30%;
+}
+
+#welcome h1 {
+    font-size: 8rem;
+    transition: 1s ease;
+    position: absolute;
+    left: 50%;
+    top: 50%; 
+    transform: scale(0.25) translate(-200%, -480%);
+    opacity: 0;
+    filter: brightness(0.1);
+}
+
+#welcome:hover h1 {
+    filter: brightness(0.45);
+    left: 50%;
+    top: 25%;
+    opacity: 1;
+    transform: translate(-50%, -50%);
+}
+
+@media (max-width: 768px) {
+    #welcome {
+        display: flex;
+        background-color: rgba(16, 3, 72, 0.3);
+        border-radius: 50%;
+        width: 250px;
+        height: 250px;
+        margin-top: 15%;
+        margin-bottom: 15%;
+        text-align: center;
+    }
+
+    #welcome:hover {
+        width: 300px;
+        height: 300px;
+    }
+
+    #welcome img {
+        transition: 0.8s ease;
+        width: auto;
+        height: 250px;
+        margin: auto;
+        border-radius: 50px;
+    }
+
+    #welcome img:hover {
+        width: auto;
+        height: 300px;
+    }
+
+    #welcome h1 {
+        font-size: 4rem;
+        transition: 1s ease;
+        position: absolute;
+        left: 50%;
+        top: 50%; 
+        transform: scale(0.25) translate(-200%, -480%);
+        opacity: 0;
+        filter: brightness(0.1);
     }
 }
