@@ -108,6 +108,11 @@ footer{
     padding: 20px;
 }
 
+#email:hover , #numero:hover{
+    cursor: pointer;
+
+}
+
 #textoproyecto{
     text-align: justify;
     padding: 20px;
@@ -121,12 +126,15 @@ footer{
 }
 
 #foto{
-    border-radius: 40px 40px 120px 120px;
+    border-radius: 40px 40px 80px 80px;
     margin: 10px;
     width: 95%;
-    max-width: 350px;
+    max-width: 250px;
     height: auto;
-    border: 3px double rgba(20, 34, 226, 0.5);
+    border: 8px double rgba(20, 34, 226, 0.3);
+    filter: contrast(1.2) 
+            brightness(0.9)
+            opacity(0.9);
 }
 
 #carta {
