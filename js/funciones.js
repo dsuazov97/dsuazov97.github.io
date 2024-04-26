@@ -1,5 +1,5 @@
 function reinicio() {
-    var posicion = document.getElementById("cont-titulo");
+    var posicion = document.getElementById("carta");
     scrollToElement(posicion);
 }
 

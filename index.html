@@ -16,309 +16,303 @@
 </head>
 <body>
     <div class="fondo">
-        <!--Menú de navegación-->
-        <nav class="navbar navbar-expand-lg sticky-top justify-content-center">
-            <a class="navbar-brand titulo" onclick="reinicio()">z!Nk</a>  
-            <ul class="nav">
-                <li class="nav-item">
-                    <a class="nav-link" onclick="reinicio()">Inicio</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" onclick="reproyectos()">Proyectos</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" onclick="reexperiencia()">Manejo</a>
-                </li>
-            </ul>            
-        </nav>
+        <div class="contenido">
+            <!--Menú de navegación-->
+            <nav class="navbar navbar-expand-lg sticky-top justify-content-center">
+                <a class="navbar-brand titulo" onclick="reinicio()">z!Nk</a>  
+                <ul class="nav">
+                    <li class="nav-item">
+                        <a class="nav-link" onclick="reinicio()">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" onclick="reproyectos()">Proyectos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" onclick="reexperiencia()">Manejo</a>
+                    </li>
+                </ul>            
+            </nav>
 
-        <br>
-
-        <!-- Titulo -->
-        <div id="cont-titulo">
-            <h2 class="titulo">Analista Programador Computacional</h2> 
-        </div> 
-
-        <br>
-        
-        <!-- Presentación -->
-        <div id="carta">
-            <div class="row">
-                <div class="col-lg-5" style="text-align: center;">
-                    <img id="foto" src="img/1664818845135.jpeg">
-                </div>
-                <div class="col-lg-7">
-                    <div>
-                        <br>
-                        <h1 class="titulo">Diego Suazo</h1>          
-                    <p id="infop">
-                        Analista Programador Computacional, estudie en el Instituto Duoc Uc, me 
-                        encuentro en proceso de práctica profesional, vivo en Maipú, tengo 26 años, actualmente estoy en la
-                        búsqueda de nuevos conocimientos para desarrollarme de mejor manera con mi carrera. Soy una 
-                        persona autodidacta y me gusta mucho aprender.
-                    </p>
-                    </div>
-                    <div id="btncarta">
-                        <h6>Redes de contacto:</h6>
-                        <a onclick="copiarEmail()" class="iconos" id="email"><img src="img/gmail.png" width="50px" height="50px"> </a>
-                        <a onclick="copiarNumero()" class="iconos" id="numero"><img src="img/whatsapp.png" width="50px" height="50px"> </a>
-                        <a class="iconos" href="https://www.linkedin.com/in/diego-suazo-valenzuela-b62358252/" target="_blank"><img src="img/pngegg.png" width="48px" height="48px"></a>
-                        <a class="iconos" href="https://github.com/dsuazov97" target="_blank"><img src="img/github.png" width="68px" height="68px" style="margin-left: -7px;"></a>
-                        <p id="contacto"></p>
-                    </div>              
-                </div>
-            </div>
-        </div>  
-        
-        <br>
-        
-        <!-- Introducción Proyectos -->
-        <div class="cont-texto" id="proyectos">
-            <h2 class="subtitulo">Un vistazo practico</h2>
-            <p id="textoproyecto">
-                En esta sección, puedes echar un vistazo a los diferentes proyectos que he realizado durante 
-                mi fase de estudios como analista programador. Es un recorrido sencillo por mi experiencia 
-                donde cada proyecto representa un desafío superado y un aprendizaje incorporado. Todo con
-                su correspondiente repositorio en github.
-            </p>
-        </div>
-
-        <br>
-        
-        <!-- Secciones Proyectos -->
-        <section id="divsecciones">
-            <ul class="nav nav-pills justify-content-center">
-                <li class="nav-item">
-                    <a class="nav-link active titulo" data-toggle="tab" href="#tab1" style="font-size: 18pt;">Proyectos</a>
-                </li>      
-                <li class="nav-item">
-                    <a class="nav-link titulo" data-toggle="tab" href="#tab2" style="font-size: 18pt;">Testing</a>
-                </li>
-            </ul>
+            <!-- Presentación -->
+            <div id="carta">
+                <h2>Diego Ignacio Suazo Valenzuela</h2>
+                <p id="infop">
+                    Analista Programador Computacional, enfocado en el desarrollo de software y la resolución de problemáticas. Actualmente,
+                    me encuentro en el proceso de práctica profesional, buscando oportunidades para aplicar mis habilidades técnicas y blandas
+                    en un entorno laboral. Mi objetivo es desempeñarme como desarrollador fullstack, combinando mi experiencia en el desarrollo
+                    tanto del frontend como del backend de aplicaciones y sitios web. Fuera del ámbito laboral, disfruto jugar basquetbol y pool,
+                    actividades que me ayudan a mantenerme activo y enérgico. Soy una persona autodidacta que valora el aprendizaje continuo y la
+                    mejora constante en mi carrera.
+                </p>
+                <div id="btncarta">
+                    <h6>Redes de contacto:</h6>
+                    <a onclick="copiarEmail()" class="iconos" id="email"><img src="img/gmail.png" width="50px" height="50px"> </a>
+                    <a onclick="copiarNumero()" class="iconos" id="numero"><img src="img/whatsapp.png" width="50px" height="50px"> </a>
+                    <a class="iconos" href="https://www.linkedin.com/in/dsuazov97/" target="_blank"><img src="img/pngegg.png" width="48px" height="48px"></a>
+                    <a class="iconos" href="https://github.com/dsuazov97" target="_blank"><img src="img/github.png" width="68px" height="68px" style="margin-left: -7px;"></a>
+                    <p id="contacto"></p>
+                </div>           
+            </div>  
             
-            <hr>
+            <!-- Introducción Proyectos -->
+            <div class="cont-texto" id="proyectos">
+                <h2 class="subtitulo">Un vistazo practico</h2>
+                <p id="textoproyecto">
+                    En esta sección, puedes echar un vistazo a los diferentes proyectos que he realizado durante 
+                    mi fase de estudios como analista programador. Es un recorrido sencillo por mi experiencia 
+                    donde cada proyecto representa un desafío superado y un aprendizaje incorporado. Todo con
+                    su correspondiente repositorio en github.
+                </p>
+            </div>
+            
+            <!-- Secciones Proyectos -->
+            <section id="divsecciones">
+                <ul class="nav nav-pills justify-content-center">
+                    <li class="nav-item">
+                        <a class="nav-link active titulo" data-toggle="tab" href="#tab1" style="font-size: 16pt;">Proyectos</a>
+                    </li>      
+                    <li class="nav-item">
+                        <a class="nav-link titulo disabled" data-toggle="tab" href="#tab2" style="font-size: 16pt;">Testing</a>
+                    </li>
+                </ul>
 
-            <div class="tab-content">
-                <div class="tab-pane container active" id="tab1">
-                    <div id="carousel1" class="carousel slide" data-ride="carousel1">
-                        <ol class="carousel-indicators">
-                            <li data-target="#carousel1" data-slide-to="0" class="active"></li>
-                            <li data-target="#carousel1" data-slide-to="1"></li>
-                            <li data-target="#carousel1" data-slide-to="2"></li>
-                        </ol>
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <a href="#"><img src="img/Netbeans/02.png" alt="" class="d-block w-100 img-carrusel-3"></a>
-                                <div class="carousel-caption">
-                                    <p class="textocarrusel"></p>
+                <div class="tab-content">
+                    <div class="tab-pane container active" id="tab1">
+                        <!-- Primer proyecto -->
+                        <div class="cont-proyecto">
+                            <div id="carousel1" class="carousel slide" data-ride="carousel1">
+                                <ol class="carousel-indicators">
+                                    <li data-target="#carousel1" data-slide-to="0" class="active"></li>
+                                    <li data-target="#carousel1" data-slide-to="1"></li>
+                                    <li data-target="#carousel1" data-slide-to="2"></li>
+                                </ol>
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <a href="#"><img src="img/Netbeans/02.png" alt="" class="d-block w-100 img-carrusel-3"></a>
+                                        <div class="carousel-caption">
+                                            <p class="textocarrusel"></p>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <a href="#"><img src="img/Netbeans/03.png" alt="" class="d-block w-100 img-carrusel-3"></a>
+                                        <div class="carousel-caption">
+                                            <p class="textocarrusel"></p>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <a href="#"><img src="img/Netbeans/06.png" alt="" class="d-block w-100 img-carrusel-3"></a>
+                                        <div class="carousel-caption">
+                                            <p class="textocarrusel"></p>
+                                        </div>
+                                    </div>
                                 </div>
+    
+                                <a class="carousel-control-prev" href="#carousel1" data-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>                
+                                    <span class="sr-only">previous</span>
+                                </a>
+    
+                                <a class="carousel-control-next" href="#carousel1" data-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>                
+                                    <span class="sr-only">next</span>
+                                </a>
                             </div>
-                            <div class="carousel-item">
-                                <a href="#"><img src="img/Netbeans/03.png" alt="" class="d-block w-100 img-carrusel-3"></a>
-                                <div class="carousel-caption">
-                                    <p class="textocarrusel"></p>
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <a href="#"><img src="img/Netbeans/06.png" alt="" class="d-block w-100 img-carrusel-3"></a>
-                                <div class="carousel-caption">
-                                    <p class="textocarrusel"></p>
-                                </div>
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-lg-4">
+                                        <h2 class="titulo">MAN|tenimiento</h2>
+                                        <h5 class="card-title">Software de Escritorio</h5>
+                                        <a class="btn btn-primary" href="https://github.com/dsuazov97/manTenimiento" target="_blank">Repositorio de GitHub</a>
+                                    </div>
+                                    <div class="col-lg-8">
+                                        <p class="card-text">
+                                            El enfoque principal de este proyecto es mejorar la administración de una tienda de mantenimiento, mediante el desarrollo de una aplicación de
+                                            escritorio. Esta aplicación, diseñada para ofrece una solución integral para el equipo de la tienda. Con ella, se puede llevar un registro 
+                                            detallado de los valores asociados a cada servicio realizado, así como un historial completo de las actividades pasadas. Además, la aplicación 
+                                            facilita la comunicación y coordinación del equipo, permitiendo un mejor seguimiento de los servicios y una atención más rápida y eficiente
+                                            a las necesidades de los clientes.
+                                        </p>
+                                    </div>
+                                </div>      
                             </div>
                         </div>
 
-                        <a class="carousel-control-prev" href="#carousel1" data-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>                
-                            <span class="sr-only">previous</span>
-                        </a>
-
-                        <a class="carousel-control-next" href="#carousel1" data-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>                
-                            <span class="sr-only">next</span>
-                        </a>
-                    </div>
-                    <div class="card-body">
-                        <div>
-                            <h2 class="titulo">MAN|tenimiento</h2>
-                            <h4 class="card-title">Software de Escritorio</h4>
-                            <p class="card-text">
-                                El enfoque principal de este proyecto es mejorar la administración de una tienda de mantenimiento, mediante el desarrollo de una aplicación de
-                                escritorio. Esta aplicación, diseñada para ofrece una solución integral para el equipo de la tienda. Con ella, se puede llevar un registro 
-                                detallado de los valores asociados a cada servicio realizado, así como un historial completo de las actividades pasadas. Además, la aplicación 
-                                facilita la comunicación y coordinación del equipo, permitiendo un mejor seguimiento de los servicios y una atención más rápida y eficiente
-                                a las necesidades de los clientes.
-                            </p>
-                            <a class="btn btn-primary" href="https://github.com/dsuazov97/manTenimiento" target="_blank">Repositorio de GitHub</a>
+                        <!-- Segundo proyecto -->
+                        <div class="cont-proyecto">
+                            <div id="carousel2" class="carousel slide" data-ride="carousel2">
+                                <ol class="carousel-indicators">
+                                    <li data-target="#carousel2" data-slide-to="0" class="active"></li>
+                                    <li data-target="#carousel2" data-slide-to="1"></li>
+                                    <li data-target="#carousel2" data-slide-to="2"></li>
+                                </ol>
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <a href="#"><img src="img/MascotaWeb/inicio.png" alt="" class="d-block w-100 img-carrusel-3"></a>
+                                        <div class="carousel-caption">
+                                            <p class="textocarrusel"></p>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <a href="#"><img src="img/MascotaWeb/tienda2.png" alt="" class="d-block w-100 img-carrusel-3"></a>
+                                        <div class="carousel-caption">
+                                            <p class="textocarrusel"></p>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <a href="#"><img src="img/MascotaWeb/admin.png" alt="" class="d-block w-100 img-carrusel-3"></a>
+                                        <div class="carousel-caption">
+                                            <p class="textocarrusel"></p>
+                                        </div>
+                                    </div>
+                                </div>
+    
+                                <a class="carousel-control-prev" href="#carousel2" data-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>                
+                                    <span class="sr-only">previous</span>
+                                </a>
+    
+                                <a class="carousel-control-next" href="#carousel2" data-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>                
+                                    <span class="sr-only">next</span>
+                                </a>
+                            </div>
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-lg-4">
+                                        <h2 class="titulo"> Tienda Mascota</h2>
+                                        <h5 class="card-title">Aplicaciones Web</h5>
+                                        <a class="btn btn-primary" href="https://github.com/dsuazov97/mascotaWeb" target="_blank">Repositorio de GitHub</a>
+                                    </div>
+                                    <div class="col-lg-8">
+                                        <p class="card-text">
+                                            El propósito fundamental de este proyecto es mejorar la gestión de inventario, ventas y otros aspectos cruciales dentro de una tienda de mascotas 
+                                            mediante el uso de una plataforma web. Esta iniciativa conllevó al desarrollo de una página web diseñada para la gestión integral de la tienda,
+                                            La implementación incluyó la automatización del seguimiento del inventario con cada venta realizada, la posibilidad de agregar nuevos productos 
+                                            directamente a través del menú administrativo sin necesidad de acceder a otras plataformas externas. Esto permitió una gestión más eficiente del
+                                            stock, agilizó el proceso de ventas y ofreció mayor comodidad tanto para los clientes como para el equipo administrativo.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Tercer proyecto -->
+                        <div class="cont-proyecto">
+                            <div id="carousel3" class="carousel slide" data-ride="carousel3">
+                                <ol class="carousel-indicators">
+                                    <li data-target="#carousel3" data-slide-to="0" class="active"></li>
+                                    <li data-target="#carousel3" data-slide-to="1"></li>
+                                    <li data-target="#carousel3" data-slide-to="2"></li>
+                                    <li data-target="#carousel3" data-slide-to="3"></li>
+                                    <li data-target="#carousel3" data-slide-to="4"></li>                            
+                                </ol>
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <a href="#"><img src="img/RegistrApp/docenteHome.png" alt="" class="d-block w-100 mx-auto img-carrusel-3"></a>
+                                        <div class="carousel-caption">
+                                            <p class="textocarrusel"></p>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <a href="#"><img src="img/RegistrApp/docenteAsistencia.png" alt="" class="d-block w-100 mx-auto img-carrusel-3"></a>
+                                        <div class="carousel-caption">
+                                            <p class="textocarrusel"></p>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <a href="#"><img src="img/RegistrApp/alumnoDatos.png" alt="" class="mx-auto img-carrusel-3"></a>
+                                        <div class="carousel-caption">
+                                            <p class="textocarrusel"></p>
+                                        </div>
+                                    </div>  
+                                    <div class="carousel-item">
+                                        <a href="#"><img src="img/RegistrApp/alumnoScan.png" alt="" class="mx-auto img-carrusel-3"></a>
+                                        <div class="carousel-caption">
+                                            <p class="textocarrusel"></p>
+                                        </div>
+                                    </div>  
+                                    <div class="carousel-item">
+                                        <a href="#"><img src="img/RegistrApp/alumnoAsistencia.png" alt="" class="mx-auto img-carrusel-3"></a>
+                                        <div class="carousel-caption">
+                                            <p class="textocarrusel"></p>
+                                        </div>
+                                    </div>                     
+                                </div>
+    
+                                <a class="carousel-control-prev" href="#carousel3" data-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>                
+                                    <span class="sr-only">previous</span>
+                                </a>
+    
+                                <a class="carousel-control-next" href="#carousel3" data-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>                
+                                    <span class="sr-only">next</span>
+                                </a>
+                            </div>
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-lg-4">
+                                        <h2 class="titulo"> RegistrApp</h2>
+                                        <h4 class="card-title"> Aplicaciones Web y Mobile</h4>
+                                        <a class="btn btn-primary" href="https://github.com/dsuazov97/registrApp" target="_blank">Repositorio de GitHub</a>
+                                    </div>
+                                    <div class="col-lg-8">
+                                        <p class="card-text">
+                                            Se llevó a cabo un estudio con el objetivo de ofrecer soluciones tecnológicas que optimicen la gestión de asistencia y registro educativo. Esto se 
+                                            logró mediante el desarrollo de una página web destinada a los docentes, junto con la implementación de un sistema de generación de códigos QR 
+                                            asociados a varios factores relevantes. Al mismo tiempo, se desarrolló una aplicación móvil dirigida a los alumnos, la cual permite escanear los
+                                            códigos QR para registrar la asistencia de manera instantánea en el sistema. Este enfoque integral proporciona una herramienta eficaz para mejorar
+                                            la eficiencia en el seguimiento de la asistencia y el registro académico.
+                                        </p>
+                                    </div>
+                                </div>                                    
+                            </div>
                         </div>
                     </div>
 
-                    <div id="carousel2" class="carousel slide" data-ride="carousel2">
-                        <ol class="carousel-indicators">
-                            <li data-target="#carousel2" data-slide-to="0" class="active"></li>
-                            <li data-target="#carousel2" data-slide-to="1"></li>
-                            <li data-target="#carousel2" data-slide-to="2"></li>
-                        </ol>
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <a href="#"><img src="img/MascotaWeb/inicio.png" alt="" class="d-block w-100 img-carrusel-3"></a>
-                                <div class="carousel-caption">
-                                    <p class="textocarrusel"></p>
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <a href="#"><img src="img/MascotaWeb/tienda2.png" alt="" class="d-block w-100 img-carrusel-3"></a>
-                                <div class="carousel-caption">
-                                    <p class="textocarrusel"></p>
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <a href="#"><img src="img/MascotaWeb/admin.png" alt="" class="d-block w-100 img-carrusel-3"></a>
-                                <div class="carousel-caption">
-                                    <p class="textocarrusel"></p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <a class="carousel-control-prev" href="#carousel2" data-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>                
-                            <span class="sr-only">previous</span>
-                        </a>
-
-                        <a class="carousel-control-next" href="#carousel2" data-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>                
-                            <span class="sr-only">next</span>
-                        </a>
-                    </div>
-                    <div class="card-body">
-                        <div>
-                            <h2 class="titulo"> Tienda Mascota</h2>
-                            <h4 class="card-title">Aplicaciones Web</h4>
-                            <p class="card-text">
-                                El propósito fundamental de este proyecto es mejorar la gestión de inventario, ventas y otros aspectos cruciales dentro de una tienda de mascotas 
-                                mediante el uso de una plataforma web. Esta iniciativa conllevó al desarrollo de una página web diseñada para la gestión integral de la tienda,
-                                La implementación incluyó la automatización del seguimiento del inventario con cada venta realizada, la posibilidad de agregar nuevos productos 
-                                directamente a través del menú administrativo sin necesidad de acceder a otras plataformas externas. Esto permitió una gestión más eficiente del
-                                stock, agilizó el proceso de ventas y ofreció mayor comodidad tanto para los clientes como para el equipo administrativo.
-                            </p>
-                            <a class="btn btn-primary" href="https://github.com/dsuazov97/mascotaWeb" target="_blank">Repositorio de GitHub</a>
-                        </div>
-                    </div>
-
-                    <div id="carousel3" class="carousel slide" data-ride="carousel3">
-                        <ol class="carousel-indicators">
-                            <li data-target="#carousel3" data-slide-to="0" class="active"></li>
-                            <li data-target="#carousel3" data-slide-to="1"></li>
-                            <li data-target="#carousel3" data-slide-to="2"></li>
-                            <li data-target="#carousel3" data-slide-to="3"></li>
-                            <li data-target="#carousel3" data-slide-to="4"></li>                            
-                        </ol>
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <a href="#"><img src="img/RegistrApp/docenteHome.png" alt="" class="d-block w-100 mx-auto img-carrusel-3"></a>
-                                <div class="carousel-caption">
-                                    <p class="textocarrusel"></p>
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <a href="#"><img src="img/RegistrApp/docenteAsistencia.png" alt="" class="d-block w-100 mx-auto img-carrusel-3"></a>
-                                <div class="carousel-caption">
-                                    <p class="textocarrusel"></p>
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <a href="#"><img src="img/RegistrApp/alumnoDatos.png" alt="" class="mx-auto img-carrusel-3"></a>
-                                <div class="carousel-caption">
-                                    <p class="textocarrusel"></p>
-                                </div>
-                            </div>  
-                            <div class="carousel-item">
-                                <a href="#"><img src="img/RegistrApp/alumnoScan.png" alt="" class="mx-auto img-carrusel-3"></a>
-                                <div class="carousel-caption">
-                                    <p class="textocarrusel"></p>
-                                </div>
-                            </div>  
-                            <div class="carousel-item">
-                                <a href="#"><img src="img/RegistrApp/alumnoAsistencia.png" alt="" class="mx-auto img-carrusel-3"></a>
-                                <div class="carousel-caption">
-                                    <p class="textocarrusel"></p>
-                                </div>
-                            </div>                     
-                        </div>
-
-                        <a class="carousel-control-prev" href="#carousel3" data-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>                
-                            <span class="sr-only">previous</span>
-                        </a>
-
-                        <a class="carousel-control-next" href="#carousel3" data-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>                
-                            <span class="sr-only">next</span>
-                        </a>
-                    </div>
-                    <div class="card-body">
-                        <div>
-                            <h2 class="titulo"> RegistrApp</h2>
-                            <h4 class="card-title"> Aplicaciones Web y Mobile</h4>
-                            <p class="card-text">
-                                Se llevó a cabo un estudio con el objetivo de ofrecer soluciones tecnológicas que optimicen la gestión de asistencia y registro educativo. Esto se 
-                                logró mediante el desarrollo de una página web destinada a los docentes, junto con la implementación de un sistema de generación de códigos QR 
-                                asociados a varios factores relevantes. Al mismo tiempo, se desarrolló una aplicación móvil dirigida a los alumnos, la cual permite escanear los
-                                códigos QR para registrar la asistencia de manera instantánea en el sistema. Este enfoque integral proporciona una herramienta eficaz para mejorar
-                                la eficiencia en el seguimiento de la asistencia y el registro académico.
-                            </p>
-                            <a class="btn btn-primary" href="https://github.com/dsuazov97/registrApp" target="_blank">Repositorio de GitHub</a>
-                        </div>
-                    </div>
+                    <!-- Testing -->
+                    <article class="tab-pane container fade" id="tab2">
+                        <br><br><br><br><br>
+                        <br><br><br><br><br>
+                        
+                        <div id="welcome">
+                            <img src="img/anonimo.png" alt="Welcome">
+                            <h1> Welcome </h1>
+                        </div> 
+                        
+                        <br><br><br><br><br>
+                        <br><br><br><br><br>
+                    </article>
                 </div>
-
-                <article class="tab-pane container fade" id="tab2">
-                    <br><br><br><br><br>
-                    <br><br><br><br><br>
-                    
-                    <div id="welcome">
-                        <img src="img/anonimo.png" alt="Welcome">
-                        <h1> Welcome </h1>
-                    </div> 
-                    
-                    <br><br><br><br><br>
-                    <br><br><br><br><br>
-                </article>
+            </section>
+            
+            <!-- Experiencia -->
+            <div class="cont-experiencia" id="experiencia">
+                <h2 class="subtitulo">Conocimientos de Desarrollo</h2>          
+                <div class="div-iconos">
+                    <a><img class="img-conocimientos" src="img/python.png" width="50px" height="50px"></a>
+                    <a><img class="img-conocimientos" src="img/java-logo-1.png" width="50px" height="50px"></a=>
+                    <a><img class="img-conocimientos" src="img/3item.png" width="160px" height="60px"></a>
+                    <a><img class="img-conocimientos" src="img/bootstrap.png" width="50px" height="50px"></ass=>
+                    <a><img class="img-conocimientos" src="img/IONIC.png" width="50px" height="50px"></a>
+                    <a><img class="img-conocimientos" src="img/angular.png" width="50px" height="50px"></aclass=>
+                    <a><img class="img-conocimientos" src="img/django.png" width="60px" height="60px"></a>
+                    <a><img class="img-conocimientos" src="img/mysql.png" width="50px" height="50px"></a>
+                    <a><img class="img-conocimientos" src="img/sqlite.png" width="50px" height="50px"></a>
+                    <a><img class="img-conocimientos" src="img/oracle.png" width="50px" height="50px"></a>
+                    <a><img class="img-conocimientos" src="img/github.png" width="50px" height="50px"></a>
+                </div>
             </div>
-
-            <hr>
-
-        </section>
-        
-        <br>
-
-        <!-- Experiencia -->
-        <div class="cont-experiencia" id="experiencia">
-            <h2 class="subtitulo">Conocimientos de Desarrollo</h2>          
-            <div class="div-iconos">
-                <a><img class="img-conocimientos" src="img/python.png" width="60px" height="60px"></a>
-                <a><img class="img-conocimientos" src="img/java-logo-1.png" width="60px" height="60px"></a=>
-                <a><img class="img-conocimientos" src="img/3item.png" width="170px" height="70px"></a>
-                <a><img class="img-conocimientos" src="img/bootstrap.png" width="60px" height="60px"></ass=>
-                <a><img class="img-conocimientos" src="img/IONIC.png" width="60px" height="60px"></a>
-                <a><img class="img-conocimientos" src="img/angular.png" width="60px" height="60px"></aclass=>
-                <a><img class="img-conocimientos" src="img/django.png" width="70px" height="70px"></a>
-                <a><img class="img-conocimientos" src="img/mysql.png" width="60px" height="60px"></a>
-                <a><img class="img-conocimientos" src="img/sqlite.png" width="60px" height="60px"></a>
-                <a><img class="img-conocimientos" src="img/oracle.png" width="60px" height="60px"></a>
-                <a><img class="img-conocimientos" src="img/github.png" width="60px" height="60px"></a>
-            </div>
+            
+            <br>
+            <!-- Footer -->
+            <footer class="container-fluid">
+                <p style="text-align: center;">© Diego Suazo - Analista Programador Computacional - 2024</p>
+            </footer>
+            <br>
         </div>
-
-        <br>
-        
-        <!-- Footer -->
-        <footer class="container-fluid">
-            <p style="text-align: center;">© Diego Suazo - Analista Programador Computacional - 2024</p>
-        </footer>
-        
-        <br>
-
     </div>
+        
 </body>
 
 </html>
