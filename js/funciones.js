@@ -39,9 +39,9 @@ function copiarNumero(){
 }
 
 function descargarCV() {
-    const link = document.createElement('a');
-    const texto = link.download;
+    const texto = "CV_Diego_Suazo";
     const condicion = "[Descargado]";
+    const link = document.createElement('a');
     navigator.clipboard.writeText(texto);
     link.href = 'doc/Currículum Diego Suazo.pdf';  
     link.download = 'CV_Diego_Suazo.pdf';
