@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <title>Portafolio</title>
+    <title>Analista programador computacional</title>
     
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
@@ -35,49 +35,69 @@
 
             <!-- Presentación -->
             <div id="carta">
-                <h2>Diego Ignacio Suazo Valenzuela</h2>
-                <p id="infop">
-                    Analista Programador Computacional con experiencia en el desarrollo de software y la resolución de 
-                    problemas técnicos. Tras concluir con éxito mi práctica profesional, estoy en busca de nuevas 
-                    oportunidades para aplicar y expandir mis conocimientos. Mi experiencia incluye el desarrollo integral 
-                    de aplicaciones web y móviles, tanto en el frontend como en el backend. Fuera del ámbito laboral, 
-                    practico basquetbol y pool, actividades que me ayudan a mantenerme activo y enérgico. Me 
-                    considero autodidacta y valoro el aprendizaje continuo y la mejora constante.
-                </p>
+                <h1>¡Hola!</h1>
+                <p> Me presento, mi nombre es <strong>Diego Suazo</strong> tengo 27 años, soy egresado de <strong>Analista programador computacional</strong> en 2024 del instituto DuocUC.</p>
+                <p> En este sitio podran apreciar algunos de mis proyectos tanto en la fase de estudios como también proyectos personales realizados para mis <strong>PYME's.</strong> </p>
+                <p> También podran acceder a mis redes de contacto mediante un click. </p>
                 <div id="btncarta">
-                    <h6>Redes de contacto:</h6>
-                    <a onclick="copiarEmail()" class="iconos" id="email"><img src="img/gmail.png" width="50px" height="50px"> </a>
-                    <a onclick="copiarNumero()" class="iconos" id="numero"><img src="img/whatsapp.png" width="50px" height="50px"> </a>
-                    <a class="iconos" href="https://www.linkedin.com/in/dsuazov97/" target="_blank"><img src="img/pngegg.png" width="48px" height="48px"></a>
-                    <a class="iconos" href="https://github.com/dsuazov97" target="_blank"><img src="img/github.png" width="68px" height="68px" style="margin-left: -7px;"></a>
+                    <a onclick="descargarCV()" class="iconos" id="curriculum"><img src="img/cv.png" width="40px" height="40px"> </a>
+                    <a onclick="copiarEmail()" class="iconos" id="email"><img src="img/gmail.png" width="40px" height="40px"> </a>
+                    <a onclick="copiarNumero()" class="iconos" id="numero"><img src="img/whatsapp.png" width="40px" height="40px"> </a>
+                    <a class="iconos" href="https://www.linkedin.com/in/dsuazov97/" target="_blank"><img src="img/pngegg.png" width="40px" height="40px"></a>
+                    <a class="iconos" href="https://github.com/dsuazov97" target="_blank"><img src="img/github.png" width="58px" height="58px" style="margin-left: -7px;"></a>
                     <p id="contacto"></p>
-                </div>           
+                </div>  
+                <h5 id="experiencia">Conocimientos de Desarrollo</h5> 
+                <ul>
+                    <li>Aplicaciones moviles</li>
+                    <li>Aplicaciones de escritorio</li>
+                    <li>Sitios web</li>
+                    <li>Bot de WhatsApp</li>
+                    <li>Desarrollo en SQL</li>
+                </ul>
+                    <div class="div-iconos">
+                        <a><img class="img-conocimientos" src="img/python.png" width="40px" height="40px"></a>
+                        <a><img class="img-conocimientos" src="img/java-logo-1.png" width="40px" height="40px"></a=>
+                        <a><img class="img-conocimientos" src="img/3item.png" width="140px" height="40px"></a>
+                        <a><img class="img-conocimientos" src="img/bootstrap.png" width="40px" height="40px"></ass=>
+                        <a><img class="img-conocimientos" src="img/IONIC.png" width="40px" height="40px"></a>
+                        <a><img class="img-conocimientos" src="img/angular.png" width="40px" height="40px"></aclass=>
+                        <a><img class="img-conocimientos" src="img/django.png" width="50px" height="50px"></a>
+                        <a><img class="img-conocimientos" src="img/mysql.png" width="40px" height="40px"></a>
+                        <a><img class="img-conocimientos" src="img/sqlite.png" width="40px" height="40px"></a>
+                        <a><img class="img-conocimientos" src="img/oracle.png" width="40px" height="40px"></a>
+                        <a><img class="img-conocimientos" src="img/github.png" width="40px" height="40px"></a>
+                        <a><img class="img-conocimientos" src="img/sql-server_5968306.png" width="40px" height="40px"></a>
+                        <a><img class="img-conocimientos" src="img/scrum.png" width="40px" height="40px"></a>
+                    </div>
             </div>  
-            
-            <!-- Introducción Proyectos -->
-            <div class="cont-texto" id="proyectos">
-                <h2 class="subtitulo">Un vistazo practico</h2>
-                <p id="textoproyecto">
-                    En esta sección, puedes echar un vistazo a los diferentes proyectos que he realizado durante 
-                    mi fase de estudios como analista programador. Es un recorrido sencillo por mi experiencia 
-                    donde cada proyecto representa un desafío superado y un aprendizaje incorporado. Todo con
-                    su correspondiente repositorio en github.
-                </p>
-            </div>
             
             <!-- Secciones Proyectos -->
             <section id="divsecciones">
+
                 <ul class="nav nav-pills justify-content-center">
                     <li class="nav-item">
-                        <a class="nav-link active titulo" data-toggle="tab" href="#tab1" style="font-size: 16pt;">Público</a>
+                        <a class="nav-link active titulo" data-toggle="tab" href="#tab1" style="font-size: 12pt;">Tiempo de estudio</a>
                     </li>      
                     <li class="nav-item">
-                        <a class="nav-link titulo" data-toggle="tab" href="#tab2" style="font-size: 16pt;">Privado</a>
+                        <a class="nav-link titulo" data-toggle="tab" href="#tab2" style="font-size: 12pt;">Personales</a>
                     </li>
                 </ul>
 
                 <div class="tab-content">
                     <div class="tab-pane container active" id="tab1">
+
+                        <!-- Introducción Proyectos -->
+                        <div class="cont-texto" id="proyectos">
+                            <h2 class="subtitulo">Un vistazo practico</h2>
+                            <p id="textoproyecto">
+                                En esta sección, puedes echar un vistazo a los diferentes proyectos que he realizado durante 
+                                mi fase de estudios como analista programador. Es un recorrido sencillo por mi experiencia 
+                                donde cada proyecto representa un desafío superado y un aprendizaje incorporado. Todo con
+                                su correspondiente repositorio en github.
+                            </p>
+                        </div>
+
                         <!-- Primer proyecto -->
                         <div class="cont-proyecto">
                             <div id="carousel1" class="carousel slide" data-ride="carousel1">
@@ -272,9 +292,19 @@
 
                     <!-- Testing -->
                     <div class="tab-pane container fade" id="tab2">
+
+                        <!-- Introducción Proyectos -->
+                        <div class="cont-texto" id="proyectos">
+                            <h2 class="subtitulo">Proyectos personales</h2>
+                            <p id="textoproyecto">
+                                Aquí podras ver diferentes proyectos que he realizado los cuales van orientados principalmente
+                                a una PYME de peluqueria canina llamada BeautyPaws, realizando por el momento una aplicación movil
+                                y un bot de whatsapp para la mejora y la automatización en gestión de la misma.
+                        </div>
+
                         <!-- Cuarto proyecto -->
                         <div class="cont-proyecto">
-                            <div id="carousel4" class="carousel slide" data-ride="carousel3">
+                            <div id="carousel4" class="carousel slide" data-ride="carousel4">
                                 <ol class="carousel-indicators">
                                     <li data-target="#carousel4" data-slide-to="0" class="active"></li>
                                     <li data-target="#carousel4" data-slide-to="1"></li>
@@ -358,30 +388,75 @@
                                 </div>                                    
                             </div>
                         </div>
+
+                        <!-- Quinto proyecto -->
+                        <div class="cont-proyecto">
+                            <div id="carousel5" class="carousel slide" data-ride="carousel5">
+                                <ol class="carousel-indicators">
+                                    <li data-target="#carousel5" data-slide-to="0" class="active"></li>
+                                    <li data-target="#carousel5" data-slide-to="1"></li>
+                                    <li data-target="#carousel5" data-slide-to="2"></li>
+                                    <li data-target="#carousel5" data-slide-to="3"></li>
+                                </ol>
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <a href="#"><img src="img/BeautyPawsBOT/25566a40-8ea8-4f66-91bf-ceeed295a115.JPG" alt="" class="d-block w-100 mx-auto img-carrusel-3"></a>
+                                        <div class="carousel-caption">
+                                            <p class="textocarrusel"></p>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <a href="#"><img src="img/BeautyPawsBOT/IMG_1342.PNG" alt="" class="d-block w-100 mx-auto img-carrusel-3"></a>
+                                        <div class="carousel-caption">
+                                            <p class="textocarrusel"></p>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <a href="#"><img src="img/BeautyPawsBOT/IMG_1341.PNG" alt="" class="d-block w-100 mx-auto img-carrusel-3"></a>
+                                        <div class="carousel-caption">
+                                            <p class="textocarrusel"></p>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <a href="#"><img src="img/BeautyPawsBOT/Captura de pantalla 2024-09-24 140208.png" alt="" class="d-block w-100 mx-auto img-carrusel-3"></a>
+                                        <div class="carousel-caption">
+                                            <p class="textocarrusel"></p>
+                                        </div>
+                                    </div>
+                                </div>
+    
+                                <a class="carousel-control-prev" href="#carousel5" data-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>                
+                                    <span class="sr-only">previous</span>
+                                </a>
+    
+                                <a class="carousel-control-next" href="#carousel5" data-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>                
+                                    <span class="sr-only">next</span>
+                                </a>
+                            </div>
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-lg-4">
+                                        <h2 class="titulo">BeautyPawsBOT</h2>
+                                        <h4 class="card-title"> Bot de WhatsApp</h4>
+                                        <!-- <a class="btn btn-primary" href="https://github.com/dsuazov97/registrApp" target="_blank">Repositorio de GitHub</a> -->
+                                    </div>
+                                    <div class="col-lg-8">
+                                        <p class="card-text">
+                                            BeautyPaws enfrentaba dificultades en la gestión de citas y comunicación con sus clientes debido a un manejo manual. 
+                                            Para solucionar esto, propusimos un bot de WhatsApp que permite agendar citas de forma instantánea, proporcionar información
+                                            sobre servicios y precios. Esta solución automatiza procesos, mejora la accesibilidad y
+                                            optimiza la atención al cliente, aumentando así la satisfacción y eficiencia operativa.
+                                        </p>
+                                    </div>
+                                </div>                                    
+                            </div>
+                        </div>
                     </div>
                     
                 </div>
             </section>
-            
-            <!-- Experiencia -->
-            <div class="cont-experiencia" id="experiencia">
-                <h2 class="subtitulo">Conocimientos de Desarrollo</h2>          
-                <div class="div-iconos">
-                    <a><img class="img-conocimientos" src="img/python.png" width="50px" height="50px"></a>
-                    <a><img class="img-conocimientos" src="img/java-logo-1.png" width="50px" height="50px"></a=>
-                    <a><img class="img-conocimientos" src="img/3item.png" width="160px" height="60px"></a>
-                    <a><img class="img-conocimientos" src="img/bootstrap.png" width="50px" height="50px"></ass=>
-                    <a><img class="img-conocimientos" src="img/IONIC.png" width="50px" height="50px"></a>
-                    <a><img class="img-conocimientos" src="img/angular.png" width="50px" height="50px"></aclass=>
-                    <a><img class="img-conocimientos" src="img/django.png" width="60px" height="60px"></a>
-                    <a><img class="img-conocimientos" src="img/mysql.png" width="50px" height="50px"></a>
-                    <a><img class="img-conocimientos" src="img/sqlite.png" width="50px" height="50px"></a>
-                    <a><img class="img-conocimientos" src="img/oracle.png" width="50px" height="50px"></a>
-                    <a><img class="img-conocimientos" src="img/github.png" width="50px" height="50px"></a>
-                    <a><img class="img-conocimientos" src="img/sql-server_5968306.png" width="50px" height="50px"></a>
-                    <a><img class="img-conocimientos" src="img/scrum.png" width="50px" height="50px"></a>
-                </div>
-            </div>
             
             <br>
             <!-- Footer -->

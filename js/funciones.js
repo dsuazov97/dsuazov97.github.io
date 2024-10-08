@@ -1,15 +1,15 @@
 function reinicio() {
-    var posicion = document.getElementById("carta");
+    const posicion = document.getElementById("carta");
     scrollToElement(posicion);
 }
 
 function reproyectos() {
-    var posicion = document.getElementById("proyectos");
+    const posicion = document.getElementById("proyectos");
     scrollToElement(posicion);
 }
 
 function reexperiencia() {
-    var posicion = document.getElementById("experiencia");
+    const posicion = document.getElementById("experiencia");
     scrollToElement(posicion);
 }
 
@@ -25,15 +25,24 @@ function scrollToElement(elemento) {
 }
 
 function copiarEmail(){
-    var texto = "d.suazov97@gmail.com";
-    var copiado = "[Copiado]";
+    const texto = "d.suazov97@gmail.com";
+    const copiado = "[Copiado]";
     navigator.clipboard.writeText(texto);
     document.getElementById("contacto").innerHTML = texto + " " + copiado;
 }
 
 function copiarNumero(){
-    var texto = "+56934414383";
-    var copiado = "[Copiado]";
+    const texto = "+56934414383";
+    const copiado = "[Copiado]";
     navigator.clipboard.writeText(texto);
     document.getElementById("contacto").innerHTML = texto + " " + copiado;
+}
+
+function descargarCV() {
+    const link = document.createElement('a');
+    link.href = 'doc/Currículum Diego Suazo.pdf';  
+    link.download = 'CV_Diego_Suazo.pdf';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
 }
