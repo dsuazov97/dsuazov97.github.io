@@ -26,25 +26,27 @@ function scrollToElement(elemento) {
 
 function copiarEmail(){
     const texto = "d.suazov97@gmail.com";
-    const copiado = "[Copiado]";
+    const condicion = "[Copiado]";
     navigator.clipboard.writeText(texto);
-    document.getElementById("contacto").innerHTML = texto + " " + copiado;
+    document.getElementById("contacto").innerHTML = texto + " " + condicion;
 }
 
 function copiarNumero(){
     const texto = "+56934414383";
-    const copiado = "[Copiado]";
+    const condicion = "[Copiado]";
     navigator.clipboard.writeText(texto);
-    document.getElementById("contacto").innerHTML = texto + " " + copiado;
+    document.getElementById("contacto").innerHTML = texto + " " + condicion;
 }
 
 function descargarCV() {
     const link = document.createElement('a');
+    const texto = link.download;
+    const condicion = "[Descargado]";
+    navigator.clipboard.writeText(texto);
     link.href = 'doc/Currículum Diego Suazo.pdf';  
     link.download = 'CV_Diego_Suazo.pdf';
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
-    navigator.clipboard.writeText("[Descargando]");
-
+    document.getElementById("contacto").innerHTML = texto + " " + condicion;
 }
