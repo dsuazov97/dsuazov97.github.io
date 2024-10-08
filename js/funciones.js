@@ -45,4 +45,6 @@ function descargarCV() {
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
+    navigator.clipboard.writeText("[Descargando]");
+
 }

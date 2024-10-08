@@ -111,19 +111,14 @@ footer{
     margin-right: 10%;
 }
 
-
-
-
-
 .cont-proyecto{
     background-color: rgba(20, 34, 226, 0.12);
     border-radius: 50px 50px 150px 150px;
     margin: 20px;
 }
 
-#email:hover , #numero:hover{
+#email:hover , #numero:hover , #curriculum:hover{
     cursor: pointer;
-
 }
 
 #textoproyecto{
